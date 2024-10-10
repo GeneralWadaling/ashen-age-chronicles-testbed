@@ -1,0 +1,208 @@
+[
+	{
+		"name": "Aftermath era",
+		"researchAgreementCost": 150,
+		"startingSettlerCount": 1, // These values should not include the values given in Difficulties.json
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 0,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 1,
+		"startingMilitaryUnit": "TempUnit",
+		"settlerPopulation": 1,
+		"baseUnitBuyCost": 200,
+		"embarkDefense": 3,
+		"startPercent": 0,
+		"citySound": "cityClassical",
+		"iconRGB": [255, 87, 35]
+	},
+	{
+		"name": "Recovery era",
+		"researchAgreementCost": 150,
+		"startingSettlerCount": 1,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 0,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 2,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 10,
+		"startingCulture": 100,
+		"settlerPopulation": 1,
+		"baseUnitBuyCost": 200,
+		"embarkDefense": 4,
+		"startPercent": 10,
+		"citySound": "cityClassical",
+		"iconRGB": [233, 31, 99]
+	},
+	{
+		"name": "Outreach era",
+		"researchAgreementCost": 250,
+		"startingSettlerCount": 2,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 1,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 3,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 25,
+		"startingCulture": 200,
+		"settlerPopulation": 1,
+		"settlerBuildings": ["Memorial", "Monument"],
+		/*
+		"startingObsoleteWonders": [
+
+		],
+		*/
+		"baseUnitBuyCost": 200,
+		"embarkDefense": 8,
+		"startPercent": 25,
+		"citySound": "cityClassical",
+		"uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
+		"iconRGB": [157, 39, 176]
+	},
+	{
+		"name": "Neomodern era",
+		"researchAgreementCost": 250,
+		"startingSettlerCount": 2,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 1,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 3,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 50,
+		"startingCulture": 300,
+		"settlerPopulation": 2,
+		"settlerBuildings": [
+			"Memorial",
+			"Monument",
+		],
+		/*
+		"startingObsoleteWonders": [
+
+		],
+		*/
+		"baseUnitBuyCost": 300,
+		"embarkDefense": 8,
+		"startPercent": 37,
+		"citySound": "cityClassical",
+		"uniques": ["Every major Civilization gains a spy once a civilization enters this era"],
+		"iconRGB": [104, 58, 183]
+	},
+	{
+		"name": "Tempest era",
+		"researchAgreementCost": 300,
+		"startingSettlerCount": 3,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 2,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 5,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 100,
+		"startingCulture": 400,
+		"settlerPopulation": 3,
+		"settlerBuildings": [
+			"Memorial",
+			"Monument",
+		],
+		/*
+		"startingObsoleteWonders": [
+		],
+		*/
+		"baseUnitBuyCost": 400,
+		"embarkDefense": 10,
+		"startPercent": 50,
+		"citySound": "cityClassical",
+		"iconRGB": [63, 81, 182],
+		"uniques": [
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Ether era",
+		"researchAgreementCost": 350,
+		"startingSettlerCount": 3,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 2,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 5,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 200,
+		"startingCulture": 500,
+		"settlerPopulation": 3,
+		"settlerBuildings": [
+			"Memorial",
+			"Monument",
+		],
+		/*
+		"startingObsoleteWonders": [
+
+		],
+		*/
+		"baseUnitBuyCost": 600,
+		"embarkDefense": 13,
+		"startPercent": 65,
+		"citySound": "cityClassical",
+		"iconRGB": [33, 150, 243],
+		"uniques": [
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "New Vision era",
+		"researchAgreementCost": 350,
+		"startingSettlerCount": 3,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 2,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 5,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 200,
+		"startingCulture": 500,
+		"settlerPopulation": 3,
+		"settlerBuildings": [
+			"Memorial",
+			"Monument",
+		],
+		/*
+		"startingObsoleteWonders": [
+
+		],
+		*/
+		"baseUnitBuyCost": 600,
+		"embarkDefense": 13,
+		"startPercent": 65,
+		"citySound": "cityClassical",
+		"iconRGB": [33, 150, 243],
+		"uniques": [
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	},
+	{
+		"name": "Transcendental era",
+		"researchAgreementCost": 400,
+		"startingSettlerCount": 3,
+		"startingSettlerUnit": "Settler",
+		"startingWorkerCount": 3,
+		"startingWorkerUnit": "Worker",
+		"startingMilitaryUnitCount": 5,
+		"startingMilitaryUnit": "TempUnit",
+		"startingGold": 400,
+		"startingCulture": 600,
+		"settlerPopulation": 5,
+		"settlerBuildings": [
+			"Memorial",
+			"Monument",
+		],
+		/*
+		"startingObsoleteWonders": [
+
+		],
+		*/
+		"baseUnitBuyCost": 1000,
+		"embarkDefense": 25,
+		"startPercent": 80,
+		"citySound": "cityClassical",
+		"iconRGB": [76, 176, 81],
+		"uniques": [
+			"Every major Civilization gains a spy once a civilization enters this era"
+		]
+	}
+]

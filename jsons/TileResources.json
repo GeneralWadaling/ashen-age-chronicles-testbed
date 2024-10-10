@@ -1,0 +1,931 @@
+[
+	//City level abstracts
+	{
+		"name": "Housing",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource"
+		],
+	},
+	{
+		"name": "District Count",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource"
+		],
+	},
+	{
+		"name": "District Limit",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource"
+		],
+	},
+	{
+		"name": "Pollution",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource"
+		],
+	},
+	{
+		"name": "Power",
+		"resourceType": "Bonus",
+		"uniques":[
+			"City-level resource"
+		],
+	},
+
+	//Nationwide abstracts
+	{
+		"name": "Infamy",
+		"resourceType": "Strategic",
+		"uniques":[
+			"Stockpiled"
+		],
+	},
+
+
+	//Bonus
+	
+	//Bonus Food
+	{
+		"name": "Algae",
+		"resourceType": "Bonus",
+		"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"improvement": "Aquatic Farm",
+		"uniques": [
+			"Generated on every [18] tiles <in [{Featureless} {Coast}] tiles>",
+		]
+	},
+	{
+		"name": "Fish",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"food": 1,
+		"improvement": "Fishing Boats",
+		"uniques": [
+			"Generated on every [15] tiles <in [{Featureless} {Coast}] tiles>",
+		]
+	},
+	{
+		"name": "Biomass",
+		"resourceType": "Bonus",
+		"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Ashen Wasteland","Ashen Creep","Ashen Overgrowth"],
+		"food": 1,
+		"improvement": "Refinery",
+		"improvementStats": {"food": 2},
+		"uniques": [
+			"Industrial resource",
+			"Ashen resource",
+			"Generated on every [22] tiles <in [{Featureless} {Ashen Creep}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Ashen Wasteland}] tiles>",
+			"Generated on every [14] tiles <in [{Ashen Overgrowth} {Ashen Wasteland}] tiles>",
+		]
+	},
+	{
+		"name": "Cattle",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland"],
+		"food": 1,
+		"improvement": "Enclosure",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Animal",
+			"Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
+			"Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"
+		]
+	},
+	{
+		"name": "Sheep",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Hill"],
+		"food": 1,
+		"improvement": "Enclosure",
+		"improvementStats": {"food": 1},
+		"uniques": [
+			"Animal",
+			"Generated on every [13] tiles <in [{non-[Ashen]} {Hill}] tiles> <in tiles without [Woodland]>",
+			"Generated on every [10] tiles <in [{non-[Ashen]} {Hill}] tiles> <in tiles without [Woodland]> <in tiles without [Fresh Water]> <in [Hill] Regions>",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+		]
+	},
+	{
+		"name": "Game",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Woodland","Tundra"], // Tundra only if lowland
+		"food": 1,
+		"improvement": "Enclosure",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Animal",
+			"Generated on every [8] tiles <in [{Tundra} {Woodland}] tiles>",
+			"Generated on every [12] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [25] tiles <in [{Plains} {Woodland}] tiles> <in tiles without [Hill]>",
+			"Generated on every [25] tiles <in [{Grassland} {Woodland}] tiles> <in tiles without [Hill]>",
+			"Generated on every [16] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+			"Generated on every [28] tiles <in [Woodland] tiles> <in [Hill] Regions>",
+		]
+	},
+	{
+		"name": "Wheat",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"], // Desert only if fresh water
+		"food": 1,
+		"improvement": "Farmland",
+		"uniques": [
+			"Food crops",
+			"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [10] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
+			"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+			"Generated on every [20] tiles <in [{Fresh Water} {Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>",
+		]
+	},
+	{
+		"name": "Maize",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains","Flood plains","Grassland"],
+		"food": 1,
+		"improvement": "Farmland",
+		"uniques": [
+			"Food crops",
+			"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [10] tiles <in [{Plains} {Fresh Water}] tiles> <in tiles without [Hill]>",
+			"Generated on every [10] tiles <in [{Grassland} {Fresh Water}] tiles> <in tiles without [Hill]>",
+			"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+			"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>",
+			"Doesn't generate naturally <in [{Desert} {Flood plains}] tiles>",
+			"Doesn't generate naturally <in [{Tundra} {Flood plains}] tiles>",
+		]
+	},
+	{
+		"name": "Rice",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Wetland","Flood plains","Grassland"],
+		"food": 1,
+		"improvement": "Farmland",
+		"uniques": [
+			"Food crops",
+			"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles>",
+			"Generated on every [10] tiles <in [{Grassland} {Wetland}] tiles>",
+			"Generated on every [10] tiles <in [{Grassland} {Fresh Water}] tiles> <in tiles without [Hill]>",
+			"Generated on every [15] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>",
+			"Doesn't generate naturally <in [{Desert} {Flood plains}] tiles>",
+			"Doesn't generate naturally <in [{Plains} {Flood plains}] tiles>",
+			"Doesn't generate naturally <in [{Tundra} {Flood plains}] tiles>",
+			]
+	},
+	{
+		"name": "Tubers",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Tundra","Plains","Hill"],
+		"food": 1,
+		"improvement": "Farmland",
+		"uniques": [
+			"Food crops",
+			"Generated on every [16] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [28] tiles <in [{Hill} {Plains}] tiles>",
+			"Generated on every [20] tiles <in [{Hill} {Tundra}] tiles>",
+			"Generated on every [12] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+			"Generated on every [10] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+			]
+	},
+
+	//Bonus Industrial
+	{
+		"name": "Tar Lichen",
+		"resourceType": "Bonus",
+		"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Ashen Wasteland","Ashen Creep","Ruins"],
+		"production": 1,
+		"improvement": "Harvest Station",
+		"improvementStats": {"production": 1, "gold": 1},
+		"uniques": [
+			"Industrial crops",
+			"Industrial resource",
+			"Ashen resource",
+			"Generated on every [20] tiles <in [Ashen Wasteland] tiles>",
+			"Generated on every [18] tiles <in [Ashen Creep] tiles>",
+			"Doesn't generate naturally <in [{non-[Ashen]} {Ruins}] tiles>",
+		]
+	},
+	{
+		"name": "Storm Vine",
+		"resourceType": "Bonus",
+		"revealedBy": "Biology",
+		"terrainsCanBeFoundOn": ["Ashen Wasteland","Ashen Creep","Ruins"],
+		"production": 1,
+		"improvement": "Harvest Station",
+		"improvementStats": {"production": 1, "gold": 1},
+		"uniques": [
+			"Industrial crops",
+			"Industrial resource",
+			"Ashen resource",
+			"Generated on every [20] tiles <in [Ashen Wasteland] tiles>",
+			"Generated on every [18] tiles <in [Ashen Creep] tiles>",
+			"Doesn't generate naturally <in [{non-[Ashen]} {Ruins}] tiles>",
+		]
+	},
+	{
+		"name": "Granite",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra","Plains","Ashen Wasteland","Ruins"],
+		"production": 1,
+		"improvement": "Quarry",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Industrial resource",
+			"Material",
+			"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [19] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [19] tiles <in [{Featureless} {Desert}] tiles>",
+		]
+	},
+	{
+		"name": "Rubber",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Jungle","Woodland"],
+		"production": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"production": 2}
+		"uniques": [
+			"Industrial crops",
+			"Industrial resource",
+			"Material",
+			"Generated on every [20] tiles <in [{Plains} {Woodland}] tiles> <in [Woodland] Regions>",
+			"Generated on every [18] tiles <in [{Plains} {Jungle}] tiles> <in [Woodland] Regions>",
+			"Generated on every [18] tiles <in [{Grassland} {Woodland}] tiles> <in [Woodland] Regions>",
+			"Generated on every [18] tiles <in [{Grassland} {Jungle}] tiles> <in [Woodland] Regions>",
+			"Doesn't generate naturally <in [Hill] tiles>"]
+	},
+	{
+		"name": "Clay",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra","Plains","Flood plains","Ruins"],
+		"production": 1,
+		"improvement": "Quarry",
+		"improvementStats": {"culture": 1},
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Material",
+			"Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [12] tiles <in [{Fresh Water} {Grassland}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [28] tiles <in [{Featureless} {Desert}] tiles> <in tiles without [Fresh Water]> <in [Desert] Regions>",
+			"Generated on every [15] tiles <in [{Fresh Water} {Desert}] tiles>",
+		]
+	},
+	{
+		"name": "Niter",
+		"resourceType": "Bonus",
+		"revealedBy": "Chemistry",
+		"terrainsCanBeFoundOn": ["Grassland","Desert","Tundra","Plains","Snow","Ashen Wasteland","Ruins"],
+		"food": 1,
+		"improvement": "Mineshaft",
+		"improvementStats": {"food": 1,"production": 1},
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Generated on every [23] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [19] tiles <in [{Featureless} {Plains}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [15] tiles <in [{Featureless} {Desert}] tiles> <in tiles without [Fresh Water]>",
+		]
+	},
+	{
+		"name": "Coal",
+		"resourceType": "Bonus",
+		"revealedBy": "Prospecting and Surveying",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Hill","Jungle","Woodland","Wetland","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvement": "Mineshaft",
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Fuel",
+			"Generated on every [15] tiles <in [Hill] tiles> <in [Hill] Regions>",
+			"Generated on every [18] tiles <in [Woodland] tiles> <in tiles without [Hill]>",
+			"Generated on every [18] tiles <in [Wetland] tiles>",
+			"Generated on every [27] tiles <in [Woodland] tiles>",
+			"Generated on every [18] tiles <in [Jungle] tiles>",
+			"Generated on every [20] tiles <in [{Grassland} {Hill}] tiles>",
+			"Generated on every [20] tiles <in [{Plains} {Hill}] tiles>",
+			"Generated on every [18] tiles <in [{Desert} {Hill}] tiles>",
+			"Generated on every [18] tiles <in [{Tundra} {Hill}] tiles>",
+			"Generated on every [18] tiles <in [{Snow} {Hill}] tiles>",
+		]
+	},
+	{
+		"name": "Aluminum",
+		"resourceType": "Bonus",
+		"revealedBy": "Electricity",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Hill","Snow","Woodland","Jungle","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvement": "Mineshaft",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Metal",
+			"Generated on every [27] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [27] tiles <in [{Featureless} {Snow}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Desert}] tiles>",
+			"Generated on every [18] tiles <in [Hill] tiles>",
+			"Generated on every [23] tiles <in [Woodland] tiles>",
+			"Generated on every [23] tiles <in [Jungle] tiles>",
+		]
+	},
+	{
+		"name": "Iron",
+		"resourceType": "Bonus",
+		"revealedBy": "Prospecting and Surveying",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Wetland","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvement": "Mineshaft",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Metal",
+			"Generated on every [20] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [27] tiles <in [{Featureless} {Snow}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Desert}] tiles>",
+			"Generated on every [20] tiles <in [Hill] tiles>",
+			"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+		]
+	},
+	{
+		"name": "Rare Earth",
+		"resourceType": "Bonus",
+		"revealedBy": "Electronics",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Wetland","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvement": "Mineshaft",
+		"improvementStats": {"science": 1},
+		"uniques": [
+			"Scientific resource",
+			"Mineral",
+			"Metal",
+			"Generated on every [13] tiles <in [{Featureless} {Tundra}] tiles>",
+			"Generated on every [20] tiles <in [{Featureless} {Snow}] tiles>",
+			"Generated on every [15] tiles <in [{Featureless} {Desert}] tiles>",
+			"Generated on every [19] tiles <in [Hill] tiles>",
+			"Generated on every [23] tiles <in [Hill] tiles> <in tiles without [Woodland]>",
+			"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [27] tiles <in [{Featureless} {Grassland}] tiles>",
+		]
+	},
+
+	//Bonus economic
+	{
+		"name": "Whales",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"improvement": "Fishing Boats",
+		"improvementStats": {"gold": 2, "food": 1},
+		"uniques": [
+			"Economic resource",
+			"Generated on every [35] tiles <in [{Featureless} {Coast}] tiles>",
+		]
+	},
+	{
+		"name": "Cotton",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Flood plains"],
+		"production": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Economic resource",
+			"Economic crops",
+			"Generated on every [27] tiles <in [{Featureless} {Plains}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [27] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [18] tiles <in [{Flood plains} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [18] tiles <in [{Flood plains} {Plains}] tiles> <in tiles without [Fresh Water]>",
+			"Generated on every [16] tiles <in [{Flood plains} {Desert}] tiles> <in tiles without [Fresh Water]>",
+		]
+	},
+	{
+		"name": "Hemp",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert"],
+		"production": 1,
+		"improvement": "Plantation",
+		"improvementStats": {"gold": 1},
+		"uniques": [
+			"Economic resource",
+			"Industrial crops",
+			"Economic crops",
+			"Generated on every [21] tiles <in [{Featureless} {Plains}] tiles>",
+			"Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
+		]
+	},
+	{
+		"name": "Copper",
+		"resourceType": "Bonus",
+		"revealedBy": "Prospecting and Surveying",
+		"terrainsCanBeFoundOn": ["Hill"],
+		"gold": 1,
+		"improvement": "Mineshaft",
+		"improvementStats": {"gold": 1,"production": 1},
+		"uniques": [
+			"Industrial resource",
+			"Economic resource",
+			"Mineral",
+			"Metal",
+			"Generated on every [20] tiles <in [Hill] tiles>",
+		]
+	},
+
+
+	//Luxury
+	{
+		"name": "Pearls",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Coast"],
+		"gold": 2,
+		"improvement": "Fishing Boats",
+		"uniques": [
+			"Economic resource",
+			"Generated with weight [20] <in [Jungle] tiles>",
+			"Generated with weight [10] <in [Woodland] Regions>",
+			"Generated with weight [5] <in [Desert] Regions>",
+			"Generated with weight [15] <in [Hill] Regions>",
+			"Generated with weight [5] <in [Plains] Regions>",
+			"Generated with weight [10] <in [Grassland] Regions>",
+			"Generated with weight [20] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+		]
+	},
+	{
+		"name": "Teal Amber",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Ashen Creep","Ashen Wasteland","Ashen Overgrowth","Ruins"],
+		"culture": 1,
+		"improvement": "Harvest Station",
+		"uniques": [
+			"Cultural resource",
+			"Ashen resource",
+			"Doesn't generate naturally <in [non-[Ashen]] tiles>",
+			"Doesn't generate naturally <in [Water] tiles>",
+			"Generated with weight [15] <in [Ashen Overgrowth] tiles>",
+			"Generated with weight [15] <in [Ashen Creep] tiles>",
+			"Generated with weight [10] <in [Ashen Wasteland] tiles>",
+		]
+	},
+	{
+		"name": "Illuminite",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Ashen Creep","Ashen Wasteland"],
+		"gold": 2,
+		"improvement": "Quarry",
+		"uniques": [
+			"Economic resource",
+			"Mineral",
+			"Ashen resource",
+			"Doesn't generate naturally <in [non-[Ashen]] tiles>",
+			"Generated with weight [15] <in [Ashen Creep] tiles>",
+			"Generated with weight [10] <in [Ashen Wasteland] tiles>",
+		]
+	},
+	{
+		"name": "Incense",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Desert","Flood plains"],
+		"faith": 1,
+		"improvement": "Plantation",
+		"uniques": [
+			"Religious resource",
+			"Economic crops",
+			"Generated with weight [35] <in [Desert] Regions>",
+			"Generated with weight [10] <in [Plains] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]"]
+	},
+	{
+		"name": "Silk",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Woodland","Jungle"],
+		"culture": 1,
+		"improvement": "Plantation",
+		"uniques": [
+			"Cultural resource",
+			"Economic crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [5] <in [Jungle] tiles>",
+			"Generated with weight [30] <in [Woodland] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Hill] tiles>",
+		]
+	},
+	{
+		"name": "Tobacco",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Woodland","Jungle"],
+		"faith": 1,
+		"improvement": "Plantation",
+		"uniques": [
+			"Religious resource",
+			"Economic crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [5] <in [Jungle] tiles>",
+			"Generated with weight [30] <in [Woodland] Regions>",
+			"Generated with weight [15] <in [Grassland] Regions>",
+			"Generated with weight [15] <in [Plains] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Hill] tiles>",
+		]
+	},
+	{
+		"name": "Coffee",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Woodland","Grassland"],
+		"culture": 1,
+		"improvement": "Plantation",
+		"uniques": [
+			"Cultural resource",
+			"Economic crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [35] <in [Jungle] tiles>",
+			"Generated with weight [15] <in [Woodland] Regions>",
+			"Generated with weight [5] <in [Grassland] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Doesn't generate naturally <in [{Plains} {Jungle}] tiles>",
+			"Generated near City States with weight [15]"
+			]
+	},
+	{
+		"name": "Fruit",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Woodland","Flood plains"],
+		"food": 2,
+		"improvement": "Plantation",
+		"uniques": [
+			"Cultural resource",
+			"Food crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [35] <in [Jungle] tiles>",
+			"Generated with weight [15] <in [Woodland] Regions>",
+			"Generated with weight [5] <in [Desert] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Tundra] tiles>"
+		]
+	},
+	{
+		"name": "Herbs",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland","Hill","Flood plains"],
+		"culture": 1,
+		"improvement": "Plantation",
+		"uniques": [
+			"Cultural resource",
+			"Economic crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [15] <in [Grassland] Regions>",
+			"Generated with weight [29] <in [Hill] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [{Desert} {Hill}] tiles>",
+			"Doesn't generate naturally <in [{Snow} {Hill}] tiles>",
+			"Doesn't generate naturally <in [{Tundra} {Hill}] tiles>",
+			"Generated near City States with weight [15]",
+			]
+	},
+	{
+		"name": "Spices",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Woodland","Wetland"],
+		"food": 2,
+		"improvement": "Plantation",
+		"uniques": [
+			"Economic resource",
+			"Economic crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [30] <in [Jungle] tiles>",
+			"Generated with weight [10] <in [Woodland] Regions>",
+			"Generated with weight [5] <in [Plains] Regions>",
+			"Generated with weight [5] <in [Grassland] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [15]",
+			"Doesn't generate naturally <in [Hill] tiles>",
+			"Doesn't generate naturally <in [{Tundra} {Woodland}] tiles>"]
+	},
+	{
+		"name": "Sugar",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Flood plains","Grassland","Wetland"],
+		// Technically sugar can also be placed on lowland jungles which then *turn* into Wetland.
+		"food": 2,
+		"improvement": "Plantation",
+		"uniques": [
+			"Economic resource",
+			"Food crops",
+			"Doesn't generate naturally <in [Ashen] tiles>",
+			"Generated with weight [20] <in [Jungle] tiles>",
+			"Generated with weight [15] <in [Desert] Regions>",
+			"Generated with weight [20] <in [Grassland] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [10]",
+			"Doesn't generate naturally <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>"]
+	},
+	{
+		"name": "Rock Salt",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Plains","Woodland"],
+		"production": 1,
+		"food": 1,
+		"improvement": "Mineshaft",
+		"uniques": [
+			"Economic resource",
+			"Mineral",
+			"Generated with weight [15] <in [Tundra] Regions>",
+			"Generated with weight [5] <in [Woodland] Regions>",
+			"Generated with weight [15] <in [Desert] Regions>",
+			"Generated with weight [10] <in [Hill] Regions>",
+			"Generated with weight [25] <in [Plains] Regions>",
+			"Generated with weight [15] <in [Hybrid] Regions>",
+			"Generated near City States with weight [10]",
+			"Doesn't generate naturally <in [{Woodland} {Hill}] tiles>"]
+	},
+	{
+		"name": "Gems",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Woodland","Hill","Ruins","Ashen Wasteland","Ashen Creep"],
+		"gold": 3,
+		"improvement": "Mineshaft",
+		"uniques": [
+			"Economic resource",
+			"Mineral",
+			"Valuable mineral",
+			"Generated with weight [5] <in [Tundra] Regions>",
+			"Generated with weight [20] <in [Jungle] tiles>",
+			"Generated with weight [15] <in [Hill] Regions>",
+			"Generated with weight [5] <in [Grassland] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [10]",
+			"Doesn't generate naturally <in [Woodland] tiles> <in tiles without [Hill]>"
+		]
+	},
+	{
+		"name": "Gold Ore", // Not called "Gold" in order to not conflict with siege type units for translations
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Desert","Hill","Woodland","Jungle","Ruins","Ashen Wasteland","Ashen Creep"],
+		"gold": 2,
+		"improvement": "Mineshaft",
+		"uniques": [
+			"Economic resource",
+			"Mineral",
+			"Valuable mineral",
+			"Generated with weight [25] <in [Desert] Regions>",
+			"Generated with weight [30] <in [Hill] Regions>",
+			"Generated with weight [5] <in [Plains] Regions>",
+			"Generated with weight [5] <in [Hybrid] Regions>",
+			"Generated near City States with weight [10]",
+			"Doesn't generate naturally <in [Woodland] tiles> <in tiles without [Hill]>",
+			"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>"
+		]
+	},
+	{
+		"name": "Silver",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Hill","Woodland","Jungle","Tundra","Grassland","Ruins","Ashen Wasteland","Ashen Creep"],
+		"gold": 2,
+		"improvement": "Mineshaft",
+		"uniques": [
+			"Economic resource",
+			"Mineral",
+			"Valuable mineral",
+			"Generated with weight [25] <in [Tundra] Regions>",
+			"Generated with weight [30] <in [Hill] Regions>",
+			"Generated with weight [20] <in [Grassland] Regions>",
+			"Generated with weight [10] <in [Hybrid] Regions>",
+			"Generated near City States with weight [10]",
+			"Doesn't generate naturally <in [Woodland] tiles> <in tiles without [Hill]>",
+			"Doesn't generate naturally <in [Jungle] tiles> <in tiles without [Hill]>",
+			"Doesn't generate naturally <in [{Tundra} {Hill}] tiles>",
+			"Doesn't generate naturally <in [{Grassland} {Fresh Water}] tiles>",
+			"Doesn't generate naturally <in [{Grassland} {Hill}] tiles>"
+		]
+	},
+
+	//Strategic
+	{
+		"name": "Titanium",
+		"resourceType": "Strategic",
+		"revealedBy": "Reindustrialization",
+		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Wetland","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvement": "Mineshaft",
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Metal",
+			"Guaranteed with Strategic Balance resource option",
+			"Generated with weight [45] <in [{Featureless} {Tundra}] tiles>",
+			"Generated with weight [25] <in [{Featureless} {Snow}] tiles>",
+			"Generated with weight [35] <in [{Featureless} {Desert}] tiles>",
+			"Generated with weight [26] <in [Hill] tiles>",
+			"Minor deposits generated with weight [10] <in [Wetland] tiles> <in tiles without [Hill]>",
+			"Minor deposits generated with weight [10] <in [{Jungle} {Hill}] tiles>",
+			"Minor deposits generated with weight [20] <in [Woodland] tiles>",
+			"Minor deposits generated with weight [20] <in [Hill] tiles> <in tiles without [Woodland]> <in tiles without [Jungle]>",
+			"Minor deposits generated with weight [30] <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+			"Minor deposits generated with weight [20] <in [{Featureless} {Plains}] tiles>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Tundra}] tiles>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>"],
+		"majorDepositAmount": {"sparse": 4, "default": 6, "abundant": 9},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	{
+		"name": "Petroleum",
+		"resourceType": "Strategic",
+		"revealedBy": "Chemistry",
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Wetland","Woodland","Jungle","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvedBy": ["Refinery", "Offshore Platform"],
+		"improvementStats": {"production": 3},
+		"uniques": [
+			"Industrial resource",
+			"Fuel",
+			"Deposits in [Coast] tiles always provide [5] resources",
+			"Guaranteed with Strategic Balance resource option",
+			"Generated with weight [35] <in [Wetland] tiles> <in tiles without [Hill]>",
+			"Generated with weight [30] <in [{Featureless} {Tundra}] tiles>",
+			"Generated with weight [35] <in [{Featureless} {Snow}] tiles>",
+			"Generated with weight [35] <in [{Featureless} {Desert}] tiles>",
+			"Generated with weight [35] <in [{Featureless} {Coast}] tiles>",
+			"Generated with weight [40] <in [Hill] tiles>",
+			"Minor deposits generated with weight [10] <in [Wetland] tiles> <in tiles without [Hill]>",
+			"Minor deposits generated with weight [10] <in [Woodland] tiles> <in tiles without [Hill]>",
+			"Minor deposits generated with weight [10] <in [Jungle] tiles> <in tiles without [Hill]>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Desert}] tiles>",
+			"Minor deposits generated with weight [20] <in [{Featureless} {Tundra}] tiles>",
+			"Minor deposits generated with weight [20] <in [{Featureless} {Snow}] tiles>"
+		],
+		"majorDepositAmount": {"sparse": 5, "default": 7, "abundant": 9},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+	{
+		"name": "Uranium",
+		"resourceType": "Strategic",
+		"revealedBy": "Atomic Science",
+		"terrainsCanBeFoundOn": ["Wetland","Jungle","Woodland","Tundra","Snow","Ruins","Ashen Wasteland","Ashen Creep"],
+		"production": 1,
+		"improvement": "Mineshaft",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Industrial resource",
+			"Mineral",
+			"Metal",
+			"Fuel",
+			"Generated with weight [35] <in [Wetland] tiles> <in tiles without [Hill]>",
+			"Generated with weight [70] <in [Jungle] tiles> <in tiles without [Hill]>",
+			"Generated with weight [70] <in [Woodland] tiles> <in tiles without [Hill]>",
+			"Minor deposits generated with weight [10] <in [Woodland] tiles>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Tundra}] tiles>",
+			"Minor deposits generated with weight [10] <in [{Featureless} {Snow}] tiles>"],
+		"majorDepositAmount": {"sparse": 2, "default": 4, "abundant": 4},
+		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
+	},
+	{
+		"name": "Halcyonite",
+		"resourceType": "Strategic",
+		"revealedBy": "Advanced Refining",
+		"terrainsCanBeFoundOn": ["Hill","Ashen Creep","Ashen Wasteland"],
+		"science": 2,
+		"improvement": "Quarry",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Scientific resource",
+			"Mineral",
+			"Ashen resource",
+			"Doesn't generate naturally <in [non-[Ashen]] tiles>",
+			"Generated with weight [35] <in [Hill] tiles>",
+			"Generated with weight [15] <in [Ashen Creep] tiles>",
+			"Minor deposits generated with weight [20] <in [Ashen Wasteland] tiles>",
+				],
+		"majorDepositAmount": {"sparse": 5, "default": 8, "abundant": 10},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+	{
+		"name": "Nimbus",
+		"resourceType": "Strategic",
+		"revealedBy": "Advanced Energy Systems",
+		"terrainsCanBeFoundOn": ["Hill","Ashen Creep","Ashen Wasteland","Ashen Overgrowth","Ruins"],
+		"production": 2,
+		"science": 1,
+		"improvement": "Extractor",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Scientific resource",
+			"Fuel",
+			"Ashen resource",
+			"Doesn't generate naturally <in [non-[Ashen]] tiles>",
+			"Doesn't generate naturally <in [Water] tiles>",
+			"Generated with weight [35] <in [Hill] tiles>",
+			"Generated with weight [15] <in [Ashen Overgrowth] tiles>",
+			"Generated with weight [50] <in [Ashen Creep] tiles>",
+			"Minor deposits generated with weight [20] <in [Ashen Creep] tiles>",
+			"Minor deposits generated with weight [20] <in [Ashen Wasteland] tiles>",
+			"Minor deposits generated with weight [20] <in [{Ashen} {Ruins}] tiles>",
+				],
+		"majorDepositAmount": {"sparse": 5, "default": 8, "abundant": 10},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+	{
+		"name": "Ether",
+		"resourceType": "Strategic",
+		"revealedBy": "Etherology",
+		"terrainsCanBeFoundOn": ["Ashen Creep","Ashen Overgrowth","Ruins"],
+		"faith": 1,
+		"science": 2,
+		"improvement": "Extractor",
+		"improvementStats": {"production": 1},
+		"uniques": [
+			"Scientific resource",
+			"Ashen resource",
+			"Doesn't generate naturally <in [non-[Ashen]] tiles>",
+			"Generated with weight [2] <in [Ashen Overgrowth] tiles>",
+			"Minor deposits generated with weight [3] <in [Ashen Creep] tiles>",
+			"Minor deposits generated with weight [4] <in [{Ashen Creep} {Ruins}] tiles>",
+				],
+		"majorDepositAmount": {"sparse": 5, "default": 8, "abundant": 10},
+		"minorDepositAmount": {"sparse": 2, "default": 3, "abundant": 3}
+	},
+
+	//Commodity
+	{
+		"name": "Alcohol",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+	{
+		"name": "Beverage",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+	{
+		"name": "Jewelry",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+	{
+		"name": "Spice Blend",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+	{
+		"name": "Fine Textile",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+	{
+		"name": "Electronic Commodities",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+	{
+		"name": "Fume Blend",
+		"resourceType": "Luxury",
+		"gold": 2,
+		"uniques": [
+			"Economic resource",
+			"Commodity",
+		]
+	},
+]

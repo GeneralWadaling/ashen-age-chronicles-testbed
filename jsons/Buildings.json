@@ -1,0 +1,1425 @@
+[
+	//Capital
+	{
+		"name": "Capital",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": [
+			"Indicates the capital city",
+			"Provides [2] [Housing] <in this city>",
+			"Provides [1] [District Limit] <in this city>",
+			"Provides [2] [Housing] <in this city> <starting from the [Outreach era]>",
+			"Provides [2] [Housing] <in this city> <starting from the [Tempest era]>",
+			"Provides [3] [Housing] <in this city> <after discovering [Arcology]>",
+		]
+	},
+
+
+
+	//City Defense
+	{
+		"name": "Perimeter Fortification",
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Foundational Security"
+	},
+	{
+		"name": "Arsenal",
+		"cityStrength": 5,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"New [Militia] units start with [15] Experience [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Replacable Parts"
+	},
+	{
+		"name": "Bunker Network",
+		"cityHealth": 45,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"Population loss from nuclear attacks [-25]% [in this city]",
+			"Damage to garrison from nuclear attacks [-25]% [in this city]",
+		],
+		"requiredBuilding": "Perimeter Fortification",
+		"requiredTech": "Civil Protection"
+	},
+	{
+		"name": "Emplacements",
+		"cityStrength": 8,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured",
+		],
+		"requiredBuilding": "Arsenal",
+		"requiredTech": "Combined Arms"
+	},
+	{
+		"name": "Defense HQ",
+		"cityStrength": 15,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Military district] within [3] tiles",
+			"Consumes [2] [Power]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Telecommunications"
+	},
+	{
+		"name": "Force Shield Dome",
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"Consumes [2] [Power]",
+			"Population loss from nuclear attacks [-25]% [in this city] <when above [5] [Power]>",
+			"Damage to garrison from nuclear attacks [-25]% [in this city] <when above [5] [Power]>",
+		],
+		"requiredBuilding": "Bunker Network",
+		"requiredTech": "Field-Particle Manipulation"
+	},
+	{
+		"name": "Memory Bank",
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"Consumes [2] [Power]",
+			"Population loss from nuclear attacks [-50]% [in this city] <when above [5] [Power]>",
+		],
+		"requiredBuilding": "Bunker Network",
+		"requiredTech": "Memory Gels"
+	},
+
+	//Food and Agriculture
+	{
+		"name": "Food Storage",
+		"food": 2,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			//"[+1 Food] <in cities connected to the capital>",
+			"[+1 Food] from [Tuber] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]",
+			"[+1 Food] from [Maize] tiles [in this city]",
+			"[+1 Food] from [Rice] tiles [in this city]",
+			"Provides [2] [Housing] <in this city> <after adopting [Food Storage - Population]>",
+		],
+		"requiredTech": "Food Security"
+	},
+	{
+		"name": "Hydroponic Farm",
+		"food": 4,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"[+1 Food] from [Fruit] tiles [in this city]",
+			"[+1 Food] from [Herbs] tiles [in this city]",
+			"[+2 Food] <when above [5] [Power]> <in this city> <after adopting [Hydroponic Farm - Intensive]>",
+		],
+		"requiredTech": "Hydroponics"
+	},
+	{
+		"name": "Synthetic Food Plant",
+		"food": 6,
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"[+1 Food, +1 Production] from [Biomass] tiles [in this city]",
+			"[+1 Food, +1 Production] from [Algae] tiles [in this city]",
+			"[+6 Food] <when above [5] [Power]> <after adopting [Synthetic Food Plant - Nutrient-Dense Food]>",
+			"[+2 Happiness] <when above [5] [Power]> <after adopting [Synthetic Food Plant - Additives]>",
+			"[+2 Gold] <when above [5] [Power]> <after adopting [Synthetic Food Plant - Additives]>",
+		],
+		"requiredTech": "Biomass Processing"
+	},
+
+	//Health and Population
+	{
+		"name": "Waterworks",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Provides [1] [Housing] <in this city>",
+			"[+1 Food] from [{non-[Grassland]} {Fresh Water} {Farmland}] tiles [in this city]",
+			"[40]% Food is carried over after population increases [in this city]",
+			"Provides [2] [Housing] <in this city> <after adopting [Waterworks - Population]>",
+			"[+1 Happiness] <after adopting [Waterworks - Population]>",
+			"[+1 Food] from [{non-[Fresh Water]} {Farmland}] tiles [in your cities] <after adopting [Waterworks - Agriculture]>",
+		],
+		"requiredTech": "Settlement Infrastructure"
+	},
+	{
+		"name": "Hospital",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Provides [2] [Housing] <in this city>",
+			"[20]% Food is carried over after population increases [in this city]",	
+			"[10]% Food is carried over after population increases [in this city] <when above [5] [Power]>",
+			"[+2 Happiness] <after adopting [Hospital - Care Wards]>",
+		],
+		"requiredBuilding": "Waterworks",
+		"requiredTech": "Pharmaceuticals"
+	},
+	{
+		"name": "Biotech Lab",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Provides [2] [Housing] <in this city>",
+			"Consumes [1] [Power]",
+			"[10]% Food is carried over after population increases [in this city]",
+			"[10]% Food is carried over after population increases [in this city] <when above [5] [Power]>",
+			"[+2 Science] <after adopting [Biotech Lab - Research]>",
+			"[+1 Food] from [Agriwell] tiles [in your cities] <after adopting [Biotech Lab - Agriculture]>",
+		],
+		"requiredBuilding": "Hospital",
+		"requiredTech": "Bioengineering"
+	},
+	{
+		"name": "Incubation Vats",
+		"maintenance": 3,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Consumes [2] [Power]",
+			"[+30]% growth [in this city] <after adopting [Incubation Vats - Growth]>",
+			"[30]% Food is carried over after population increases [in this city] <when above [5] [Power]> <after adopting [Incubation Vats - Growth]>",
+			"[+20]% growth [in this city] <when not at war> <after adopting [Incubation Vats - Cloning Vats]>",
+			"[+50]% Production when constructing [Infantry] units [in this city] <when at war> <after adopting [Incubation Vats - Cloning Vats]>",
+		],
+		"requiredBuilding": "Biotech Lab",
+		"requiredTech": "Advanced Biotech"
+	},
+
+	// Habitat and Decontamination
+	{
+		"name": "Scrubbing Tower",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Consumes [3] [Pollution] <in this city>",
+		],
+		"requiredTech": "Decontamination"
+	},
+	{
+		"name": "Hazard Equipment Depot",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"All newly-trained [non-[Air]] units [in this city] receive the [Hazard Equipment] promotion",
+		],
+		"requiredTech": "Hazard Protection"
+	},
+	{
+		"name": "Waste Facility",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Consumes [3] [Pollution] <in this city>",
+		],
+		"requiredBuilding": "Scrubbing Tower",
+		"requiredTech": "Public Utility"
+	},
+	{
+		"name": "Recycling Facility",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Consumes [3] [Pollution] <in this city>",
+			"[+1 Production] per [5] population [in this city]",
+		],
+		"requiredBuilding": "Waste Facility",
+		"requiredTech": "Industrial Ecology"
+	},
+
+	//Industry
+	{
+		"name": "Workshop",
+		"maintenance": 1,
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Provides [1] [Pollution] <in this city>",
+			"[+1 Production] <in cities connected to the capital>",
+			"[+10]% [Production] [in this city] <after adopting [Workshop - Productivity]>",
+			"[-10]% maintenance cost for buildings [in this city] <after adopting [Workshop - Refurbishment]>",
+		],
+		"requiredTech": "Basic Manufacturing"
+	},
+	{
+		"name": "Prefab Foundry",
+		"maintenance": 1,
+		"production": 3,
+		"specialistSlots": {"Engineer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Provides [1] [Pollution] <in this city>",
+			"[+2 Production] <in cities connected to the capital>",
+			"[+10]% Production when constructing [All] buildings [in this city]",
+		],
+		"requiredBuilding": "Workshop",
+		"requiredTech": "Synthetic Materials"
+	},
+	{
+		"name": "Industrial Area (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Industrial Area] improvement on a specific tile",
+		],
+		"requiredTech": "Reindustrialization"
+	},
+	{
+		"name": "Factory",
+		"maintenance": 1,
+		"specialistSlots": {"Engineer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Must have an owned [Industiral district] within [3] tiles",
+			"Provides [2] [Pollution] <in this city>",
+			"[+4 Production] from [Industrial district] tiles [in this city]",
+			"[+15]% [Production] [in this city] <when above [5] [Power]>",
+			"[+3 Food] <after adopting [Factory - Cannery]>",
+			"[+2 Science] <after adopting [Factory - Prototyping Plants]>",
+		],
+		"requiredTech": "Reindustrialization"
+	},
+	{
+		"name": "Semiautomatic Assembly Plant",
+		"maintenance": 2,
+		"specialistSlots": {"Engineer": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Industrial district] within [3] tiles",
+			"Consumes [1] [Power]",
+			"Provides [2] [Pollution] <in this city>",
+			"[+3 Production] from [Industrial district] tiles [in this city]",
+			"[+15]% [Production] [in this city] <when above [5] [Power]>",
+			"[-100]% maintenance costs <after adopting [Semiautomatic Assembly Plant - Higher Automation]>",
+			"[+2 Production] from [Industrial district] tiles [in this city] <after adopting [Semiautomatic Assembly Plant - Assisted Laboring]>",
+		],
+		"requiredBuilding": "Factory",
+		"requiredTech": "Robotics"
+	},
+	{
+		"name": "Matter Fabricator",
+		"maintenance": 3,
+		"specialistSlots": {"Engineer": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Industrial district] within [3] tiles",
+			"Consumes [2] [Power]",
+			"Consumes [1] [Nimbus]",
+			"Provides [2] [Pollution] <in this city>",
+			"[+5 Production] from [Industrial district] tiles [in this city]",
+			"[+25]% [Production] [in this city] <when above [5] [Power]>",
+			"Provides [1] [Titanium] <after adopting [Matter Fabricator - Strategic Resource]>",
+			"Provides [1] [Petroleum] <after adopting [Matter Fabricator - Strategic Resource]>",
+			"Provides [1] [Uranium] <after adopting [Matter Fabricator - Strategic Resource]>",
+			"Provides [1] [Halcyonite] <after adopting [Matter Fabricator - Strategic Resource]>",
+		],
+		"requiredBuilding": "Semiautomatic Assembly Plant",
+		"requiredTech": "Nimbus Weaving"
+	},
+
+	//Economy
+	{
+		"name": "Marketplace",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Gold] <in cities connected to the capital>",
+			"[+1 Gold] <after adopting [Marketplace - Open Markets]>",
+			"[+1 Production] <after adopting [Marketplace - Restricted Markets]>",
+		],
+		"requiredTech": "Domestic Commerce"
+	},
+	{
+		"name": "Trade Warehouse",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Gold] from [Luxury resource] tiles [in this city]",
+			"[+2 Gold] <in cities connected to the capital> <after adopting [Trade Warehouse - Attended Convoy]>",
+			"[+2 Production] <in cities connected to the capital> <after adopting [Trade Warehouse - Compact Convoy]>",
+		],
+		"requiredBuilding": "Marketplace",
+		"requiredTech": "Logistics"
+	},
+	{
+		"name": "Commerce Hub (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Commerce Hub] improvement on a specific tile",
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Customs House",
+		"maintenance": 1,
+		"specialistSlots": {"Merchant": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Must have an owned [Economic district] within [3] tiles",
+			"[+3 Gold] from [Economic district] tiles [in this city]",
+			"[+15]% [Gold] [in this city]",
+			"[+3 Gold] <in cities connected to the capital> <after adopting [Customs House - Destination Duties]>",
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "Financial Institute",
+		"maintenance": 1,
+		"specialistSlots": {"Merchant": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Economic district] within [3] tiles",
+			"Consumes [1] [Power]",
+			"[+3 Gold] from [Economic district] tiles [in this city]",
+			"[+2 Gold] <after discovering [Digital Computers]>",
+			"[+15]% [Gold] [in this city] <when above [5] [Power]>",
+			"[+15]% [Gold] [in this city] <after adopting [Financial Institute - Profitability]>",
+		],
+		"requiredBuilding": "Customs House",
+		"requiredTech": "Urbanization"
+	},
+	{
+		"name": "Exchange Center",
+		"maintenance": 1,
+		"specialistSlots": {"Merchant": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Economic district] within [3] tiles",
+			"Consumes [1] [Power]",
+			"[+5 Gold] from [Economic district] tiles [in this city]",
+			"[+30]% [Gold] [in this city] <when above [5] [Power]> <before adopting [Exchange Center - Dynamic Rate]>",
+			"[+20]% [Gold] [in this city] <when above [5] [Power]> <when between [0] and [500] [Gold]> <before adopting [Exchange Center - Dynamic Rate]>",
+			"[+30]% [Gold] [in this city] <when above [5] [Power]> <when between [500] and [1500] [Gold]> <before adopting [Exchange Center - Dynamic Rate]>",
+			"[+40]% [Gold] [in this city] <when above [5] [Power]> <when between [1500] and [2500] [Gold]> <before adopting [Exchange Center - Dynamic Rate]>",
+			"[+50]% [Gold] [in this city] <when above [5] [Power]> <when above [2500] [Gold]> <before adopting [Exchange Center - Dynamic Rate]>",
+		],
+		"requiredBuilding": "Customs House",
+		"requiredTech": "Alternative Currency"
+	},
+
+	//Education and Research
+	{
+		"name": "Public School",
+		"maintenance": 1,
+		"specialistSlots": {"Scientist": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Science] per [2] population [in this city]",
+			"[+2 Production] <after adopting [Public School - Worker School]>",
+			"[+2 Gold] <after adopting [Public School - Clerk School]>",
+			"[+2 Food] <after adopting [Public School - Pioneer School]>",
+			"[+1 Culture] <after adopting [Public School - Art School]>",
+		],
+		"requiredTech": "Public Works"
+	},
+	{
+		"name": "Academy",
+		"maintenance": 1,
+		"science": 2,
+		"specialistSlots": {"Scientist": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"[+1 Science] per [4] population [in this city]",
+			"[+20]% Great Person generation [in this city] <after adopting [Academy - Elite Education]>",
+			"[+1 Food] from every [Supply Officer] <after adopting [Academy - Universal Education]>",
+			"[+1 Science] from every [Scientist] <after adopting [Academy - Universal Education]>",
+			"[+2 Gold] from every [Merchant] <after adopting [Academy - Universal Education]>",
+			"[+1 Culture] from every [Artist] <after adopting [Academy - Universal Education]>",
+			"[+2 Production] from every [Engineer] <after adopting [Academy - Universal Education]>",
+			"[+2 Faith] from every [Priest] <after adopting [Academy - Universal Education]>",
+			"[+1 Happiness] from every [Entertainer] <after adopting [Academy - Universal Education]>",
+			"[+1 Production] from every [Officer] <after adopting [Academy - Universal Education]>",
+			"[+1 Food] from every [Captain] <after adopting [Academy - Universal Education]>",
+		],
+		"requiredBuilding": "Public School",
+		"requiredTech": "Social Dynamics"
+	},
+	{
+		"name": "Neuromatter Injection Center",
+		"maintenance": 1,
+		"science": 2,
+		"specialistSlots": {"Scientist": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [2] [Power]",
+			"[+1 Science] per [3] population [in this city]",
+		],
+		"requiredBuilding": "Academy",
+		"requiredTech": "Memory Gels"
+	},
+	{
+		"name": "Institute Complex (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Institute Complex] improvement on a specific tile",
+		],
+		"requiredTech": "Education"
+	},
+	{
+		"name": "Research Lab",
+		"maintenance": 1,
+		"specialistSlots": {"Scientist": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Must have an owned [Research district] within [3] tiles",
+			"[+2 Science] from [Research district] tiles [in this city]",
+			"[+2 Science] from [Rare feature] tiles [in this city]",
+			"[+1 Science] from [Ashen] tiles [in this city]",
+		],
+		"requiredTech": "Scientific Theory"
+	},
+	{
+		"name": "Supercomputer Center",
+		"maintenance": 2,
+		"specialistSlots": {"Scientist": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Research district] within [3] tiles",
+			"Consumes [2] [Power]",
+			"[+4 Science] from [Research district] tiles [in this city]",
+			"[+30]% [Science] [in this city] <when above [5] [Power]>",
+			"[+5]% [Science] [in this city]  <after adopting [Supercomputer Center - Computation Power]>",
+		],
+		"requiredBuilding": "Research Lab",
+		"requiredTech": "Digital Computers"
+	},
+	{
+		"name": "Quantum Cogitator",
+		"maintenance": 3,
+		"specialistSlots": {"Scientist": 5},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Research district] within [3] tiles",
+			"Only available <in cities without a [Ether Matrix]>",
+			"Consumes [2] [Power]",
+			"[+4 Science] from [Research district] tiles [in this city]",
+			"[+25]% [Science] [in this city] <when above [5] [Power]>",
+			"[+25]% [Science] [in this city] <when above [5] [Power]> <after adopting [Quantum Cogitator - Research Core]>",
+			"[+10]% [Science] [in this city] <when above [5] [Power]> <after adopting [Quantum Cogitator - Optimization Core]>",
+			"[+5]% [Food] [in this city] <when above [5] [Power]> <after adopting [Quantum Cogitator - Optimization Core]>",
+			"[+5]% [Production] [in this city] <when above [5] [Power]> <after adopting [Quantum Cogitator - Optimization Core]>",
+			"[+5]% [Gold] [in this city] <when above [5] [Power]> <after adopting [Quantum Cogitator - Optimization Core]>",
+		],
+		"requiredBuilding": "Supercomputer Center",
+		"requiredTech": "Synthetic Mind"
+	},
+	{
+		"name": "Ether Matrix",
+		"maintenance": 3,
+		"specialistSlots": {"Scientist": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Research district] within [3] tiles",
+			"Only available <in cities without a [Quantum Cognitator]>",
+			"Consumes [1] [Ether]",
+			"Consumes [2] [Power]",
+			"[+8 Science] from [Research district] tiles [in this city]",
+			"[+50]% [Science] [in this city] <when above [5] [Power]>",
+			"[+25]% [Science] [in this city] <when above [0] [Ether]>",
+			"[+2 Science] from [Ether] tiles [in this city]",
+		],
+		"requiredBuilding": "Supercomputer Center",
+		"requiredTech": "Deep Ether Information"
+	},
+
+	//Culture
+	{
+		"name": "Monument",
+		"maintenance": 1,
+		"cost": 20,
+		"culture": 2,
+		"hurryCostModifier": 25,
+	},
+	{
+		"name": "Archives",
+		"maintenance": 1,
+		"culture": 3,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Culture] <after adopting [Archives - Preservation]>",
+			"[+1 Science] <after adopting [Archives - Education]>",
+			"[+1 Culture] from [Ruins] tiles [in this city]",
+		],
+		"requiredBuilding": "Monument",
+		"requiredTech": "Archaeology"
+	},
+	{
+		"name": "Plaza (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Plaza] improvement on a specific tile",
+		],
+		"requiredTech": "Mass Entertainment"
+	},
+	{
+		"name": "Concert Hall",
+		"maintenance": 1,
+		"specialistSlots": {"Artist": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Cultural district] within [3] tiles",
+			"Only available <in cities without a [Museum]>",
+			"[+3 Culture] from [Cultural district] tiles [in this city]",
+			"[+1 Culture] <after adopting [Concert Hall - Culture]>",
+			"[+1 Happiness] <after adopting [Concert Hall - Entertainment]>",
+		
+		],
+		"requiredTech": "Mass Entertainment"
+	},
+	{
+		"name": "Creative Media Studio",
+		"maintenance": 2,
+		"specialistSlots": {"Artist": 3},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Cultural district] within [3] tiles",
+			"Only available <in cities with a [Culture T1]>",
+			"Consumes [1] [Power]",
+			"[+4 Culture] from [Cultural district] tiles [in this city]",
+			"[+15]% [Culture] [in this city] <when above [5] [Power]>",
+		],
+		"requiredBuilding": "Concert Hall",
+		"requiredTech": "Digital Computers"
+	},
+
+
+	//Entertainment
+	{
+		"name": "Public House",
+		"maintenance": 1,
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Commons Quarter (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Commons Quarter] improvement on a specific tile",
+		],
+		"requiredTech": "Mass Entertainment"
+	},
+	{
+		"name": "Stadium",
+		"maintenance": 1,
+		"specialistSlots": {"Entertainer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Entertainment district] within [3] tiles",
+			"[+3 Happiness] from [Entertainment district] tiles [in this city]",
+		],
+		"requiredTech": "Mass Entertainment"
+	},
+	{
+		"name": "Pleasure Gardens",
+		"maintenance": 2,
+		"specialistSlots": {"Entertainer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Entertainment district] within [3] tiles",
+			"[+4 Happiness] from [Entertainment district] tiles [in this city]",
+		],
+		"requiredBuilding": "Stadium",
+		"requiredTech": "Environmental Engineering"
+	},
+
+	//Religious
+	{
+		"name": "Memorial",
+		"cost": 20,
+		"maintenance": 1,
+		"faith": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			
+		],
+	},
+	{
+		"name": "Sanctuary (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Sanctuary] improvement on a specific tile",
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Temple",
+		"maintenance": 1,
+		"specialistSlots": {"Priest": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Comment [Enables religious units to be built]",
+			"Must have an owned [Religious district] within [3] tiles",
+			"[+3 Faith] from [Religious district] tiles [in this city]",
+			"[+10]% Natural religion spread [in this city]"
+		],
+		"requiredTech": "Architecture"
+	},
+
+	//Military
+	{
+		"name": "Armory",
+		"maintenance": 1,
+		"specialistSlots": {"Officer": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"New [Infantry] units start with [15] Experience [in this city]",
+			"Destroyed when the city is captured",
+		],
+
+		"requiredTech": "Military Hardwares"
+	},
+	{
+		"name": "Garrison (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [75] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Garrison] improvement on a specific tile",
+		],
+		"requiredTech": "Foundational Security"
+	},
+	{
+		"name": "Barracks",
+		"maintenance": 1,
+		"specialistSlots": {"Officer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Military district] within [3] tiles",
+			"New [Military] units start with [15] Experience [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Foundational Security"
+	},
+	{
+		"name": "Ordnance Depot",
+		"maintenance": 1,
+		"specialistSlots": {"Officer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Military district] within [3] tiles",
+			"New [Artillery] units start with [15] Experience [in this city]",
+			"Comment [Enables heavy artillery units to be trained]",
+			"Destroyed when the city is captured",
+		],
+		"requiredBuilding": "Barracks",
+		"requiredTech": "Military Hardwares"
+	},
+	{
+		"name": "Engineering Depot",
+		"maintenance": 1,
+		"specialistSlots": {"Officer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Military district] within [3] tiles",
+			"New [Mechanized] units start with [15] Experience [in this city]",
+			"Comment [Enables heavy mechanized units to be trained]",
+			"Destroyed when the city is captured",
+		],
+		"requiredBuilding": "Barracks",
+		"requiredTech": "Combined Arms"
+	},
+	{
+		"name": "Military Academy",
+		"maintenance": 1,
+		"specialistSlots": {"Officer": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Military district] within [3] tiles",
+			"New [Mechanized] units start with [25] Experience [in this city]",
+			"Comment [Enables military specialist units to be trained]",
+			"Destroyed when the city is captured",
+		],
+		"requiredBuilding": "Barracks",
+		"requiredTech": "Military Science"
+	},
+
+	//Marinetime
+	{
+		"name": "Fishery",
+		"maintenance": 1,
+		"food": 1,
+		"specialistSlots": {"Captain": 1},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Water] within [3] tiles",
+			"Provides [1] [Housing] <in this city>",
+			"[+1 Food] from [Coast] tiles [in this city]",
+			"[+1 Food] from [Lakes] tiles [in this city]",
+		],
+		"requiredTech": "Aquanautics"
+	},
+	{
+		"name": "Harbor (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Water] within [3] tiles",
+			"District Construction",
+			"Cost increases by [50] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Harbor] improvement on a specific tile",
+		],
+		"requiredTech": "Aquanautics"
+	},
+	{
+		"name": "Shipyard",
+		"maintenance": 1,
+		"specialistSlots": {"Captain": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Marinetime district] within [3] tiles",
+			"Provides [1] [Pollution] <in this city>",
+			"[+1 Production] from [Water resource] tiles [in this city]",
+			"[+2 Production] from [Marinetime district] tiles [in this city] <when above [5] [Power]>",
+			"[+20]% Production when constructing [Water] units [in this city]",
+			"Comment [Enables large ships to be built]",
+		],
+		"requiredTech": "Shipbuilding"
+	},
+	{
+		"name": "Cargo Port",
+		"maintenance": 1,
+		"specialistSlots": {"Captain": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Marinetime district] within [3] tiles",
+			"Provides [1] [Pollution] <in this city>",
+			"[+3 Gold] from [Marinetime district] tiles [in this city] <when above [5] [Power]>",
+			"[+1 Gold] from [Water resource] tiles [in this city]",
+			"Connects trade routes over water",
+		],
+		"requiredTech": "Logistics"
+	},
+	{
+		"name": "Seaport",
+		"maintenance": 2,
+		"specialistSlots": {"Captain": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Marinetime district] within [3] tiles",
+			"Consumes [1] [Power]",
+			"Provides [1] [Pollution] <in this city>",
+			"[+2 Gold, +2 Production] from [Marinetime district] tiles [in this city] <when above [5] [Power]>",
+			"[+1 Production] from [Coast] tiles [in this city]",
+			"[+1 Gold] from [Ocean] tiles [in this city]",
+		],
+		"requiredBuilding": "Cargo Port",
+		"requiredTech": "Advanced Guided Systems"
+	},
+	{
+		"name": "Naval Collage",
+		"maintenance": 1,
+		"specialistSlots": {"Captain": 2},
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Marinetime district] within [3] tiles",
+			"New [Water] units start with [15] Experience [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"requiredBuilding": "Shipyard",
+		"requiredTech": "Military Science"
+	},
+
+	//Aviation
+	{
+		"name": "Aerodrome (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [75] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Aerodrome] improvement on a specific tile",
+		],
+		"requiredTech": "Aerodynamics"
+	},
+	{
+		"name": "Hangar",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must have an owned [Aviation district] within [3] tiles",
+			"New [{non-[Levcraft]} {Aircraft}] units start with [15] Experience [in this city]",
+			"Comment [Enables aircraft units to be built]",
+		],
+		"requiredTech": "Aerodynamics"
+	},
+	{
+		"name": "Airport",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Must have an owned [Aviation district] within [3] tiles",
+			"[+5]% [Culture] [in all cities]",
+			"[+5]% [Gold] [in all cities]"
+			"Provides [1] [Pollution] <in this city>",
+			"Connects trade routes over water",
+		],
+		"requiredBuilding": "Hangar",
+		"requiredTech": "Jet Flight"
+	},
+	{
+		"name": "Levship Gantry",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [2] [Power]",
+			"Must have an owned [Aviation district] within [3] tiles",
+			"New [Levcraft] units start with [15] Experience [in this city]",
+			"Provides [1] [Pollution] <in this city>",
+			"Comment [Enables levships units to be built]",
+		],
+		"requiredBuilding": "Airport",
+		"requiredTech": "Advanced Guided Systems"
+	},
+
+	//sPAce
+	{
+		"name": "Spaceport (Construction)",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"District Construction",
+			"Cost increases by [150] when built",
+			"Unsellable",
+			"Never destroyed when the city is captured",
+			"Only available <when above [0] [District Limit]>",
+			"Unavailable <when number of [District Limit] is less than [District Count]>",
+			"Unavailable <when number of [District Limit] is equal to [District Count]>",
+			"Creates a [Spaceport] improvement on a specific tile",
+		],
+		"requiredTech": "Orbital Systems"
+	},
+	{
+		"name": "Launch Bays",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Provides [1] [Pollution] <in this city>",
+			"Must have an owned [Spaceport] within [3] tiles",
+			"Comment [Enables satellites and early space projects to be built]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Orbital Systems"
+	},
+	{
+		"name": "Mass Driver",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [2] [Power]",
+			"Must have an owned [Spaceport] within [3] tiles",
+			"Comment [Enables orbital systems and advanced space projects to be built]",
+			"Destroyed when the city is captured",
+		],
+		"requiredBuilding": "Launch Bays",
+		"requiredTech": "Offworld Mission"
+	},
+
+	// Annexation
+	{
+		"name": "Proxy Office",
+		"maintenance": 4,
+		"hurryCostModifier": 50,
+		"uniques": [
+			"Remove extra unhappiness from annexed cities",
+			"Can only be built <in [Annexed] cities>",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Adminstration"
+	},
+
+	// Public Order
+	{
+		"name": "Police Headquarters",
+		"maintenance": 3,
+		"hurryCostModifier": 50,
+		"uniques": [
+			"[-10]% Unhappiness from [Population] [in this city]",
+			"[-10]% enemy spy effectiveness [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Civil Protection"
+	},
+
+	//Counterintelligence
+	{
+		"name": "Surveillance Center",
+		"maintenance": 3,
+		"hurryCostModifier": 50,
+		"uniques": [
+			"[-35]% enemy spy effectiveness [in this city]",
+		],
+		"requiredTech": "Civil Protection"
+	},
+
+	//Power
+	{
+		"name": "Power Plant",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Basic Power Building",
+			"[+1 Gold] <in cities with a [Energy Exchange]>",
+			"Provides [1] [Pollution] <in this city>",
+			"Provides [3] [Power] <in this city>",
+		],
+		"requiredTech": "Reindustrialization"
+	},
+	{
+		"name": "Bioreactor",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Basic Power Building",
+			"[+1 Gold] <in cities with a [Energy Exchange]>",
+			"Provides [3] [Power] <in this city>",
+		],
+		"requiredTech": "Industrial Ecology"
+	},
+	{
+		"name": "Combustion Power Plant",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Coal","Petroleum"],
+		"uniques": [
+			"Power Bonus Building",
+			"Only available <in cities without a [Power Bonus Building]>"
+			"[+1 Gold] <in cities with a [Energy Exchange]>",
+			"Provides [2] [Pollution] <in this city>",
+			"Provides [2] [Power]",
+		],
+		"requiredTech": "Public Utility"
+	},
+	{
+		"name": "Reactor",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Uranium","Nimbus","Storm Vine"],
+		"uniques": [
+			"Power Bonus",
+			"Only available <in cities without a [Power Bonus Building]>"
+			"[+1 Gold] <in cities with a [Energy Exchange]>",
+			"Provides [3] [Power]",
+		],
+		"requiredTech": "Public Utility"
+	},
+	{
+		"name": "Petrol Plant",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[+2 Gold] <in cities with a [Energy Exchange]>",
+			"Consumes [1] [Petroleum]",
+			"Provides [2] [Pollution] <in this city>",
+			"Provides [6] [Power] <in this city>",
+		],
+		"requiredTech": "Electricity"
+	},
+	{
+		"name": "Nuclear Reactor",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[+4 Gold] <in cities with a [Energy Exchange]>",
+			"Consumes [1] [Uranium]",
+			"Provides [1] [Pollution] <in this city>",
+			"Provides [3] [Power] <in this city>",
+			"Provides [3] [Power] <in this city> <after discovering [Nuclear Fusion]>",
+			"Provides [6] [Power] <in this city> <when above [-1] [Uranium]>",
+		],
+		"requiredTech": "Atomic Science"
+	},
+	{
+		"name": "Nimbus Reactor",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[+4 Gold] <in cities with a [Energy Exchange]>",
+			"Consumes [1] [Nimbus]",
+			"Provides [2] [Pollution] <in this city>",
+			"Provides [6] [Power] <in this city>",
+			"Provides [6] [Power] <in this city> <when above [-1] [Nimbus]>",
+		],
+		"requiredTech": "Advanced Energy Systems"
+	},
+	{
+		"name": "Gravity Reactor",
+		"maintenance": 4,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[+4 Gold] <in cities with a [Energy Exchange]>",
+			"Provides [2] [Pollution] <in this city>",
+			"Consumes [2] [Halcyonite]",
+			"Provides [16] [Power] <in this city>",
+		],
+		"requiredTech": "Gravity Reactors"
+	},
+
+	//Fuel
+	{
+		"name": "Synthetic Fuel Plant",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Coal","Maize","Algae","Tar Lichen"],
+		"uniques": [
+			"Consumes [1] [Power]",
+			"Provides [1] [Petroleum]",
+		],
+		"requiredTech": "Advanced Refining"
+	},
+
+	//Development support
+	{
+		"name": "Construction Office",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Provides [1] [District Limit] <in this city>",
+			"[+15]% Production when constructing [District Construction] buildings [in all cities]",
+			"Requires at least [5] population",
+			"Consumes [5] [Housing]",
+		],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Maintenance Station",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Provides [1] [District Limit] <in this city>",
+			"Requires at least [10] population",
+			"Consumes [5] [Housing]",
+		],
+		"requiredBuilding": "Construction Office",
+		"requiredTech": "Public Utility"
+	},
+	{
+		"name": "Self-Regulating Utility Systems",
+		"maintenance": 2,
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Provides [1] [District Limit] <in this city>",
+			"Requires at least [15] population",
+			"Consumes [5] [Housing]",
+		],
+		"requiredBuilding": "Maintenance Station",
+		"requiredTech": "Autonomous Systems"
+	},
+
+	//Network
+
+	{
+		"name": "Broadcast Station",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"[+1 Culture] per [5] population [in this city]",
+			"[+1 Happiness] <in cities with a [Stadium]>",
+			"[+1 Science] <in cities with a [Public School]>",
+			"[+1 Culture] <in cities with a [Concert Hall]>",
+			"[+1 Gold] <in cities with a [Marketplace]>",
+			"[+1 Faith] <in cities with a [Temple]>",
+		],
+		"requiredBuilding": "Monument",
+		"requiredTech": "Radio"
+	},
+	{
+		"name": "Network Center",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Consumes [1] [Power]",
+			"[+1 Culture] per [5] population [in this city]",
+			"[+1 Happiness] <in cities with a [Pleasure Garden]>",
+			"[+1 Science] <in cities with a [Public School]>",
+			"[+1 Science] <in cities with a [Academy]>",
+			"[+1 Culture] <in cities with a [Creative Media Center]>",
+			"[+1 Gold] <in cities with a [Marketplace]>",
+			"[+1 Faith] <in cities with a [Sanctum]>",
+		],
+		"requiredBuilding": "Broadcast Station",
+		"requiredTech": "Telecommunications"
+	},
+
+	//Bonuses (Industry)
+	{
+		"name": "(Industry) Alcohol Brewery",
+		"maintenance": 1,
+		"culture": 1,
+		"gold": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Wheat","Rice","Maize","Tubers","Sugar","Fruit"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Alcohol]",
+			"[+1 Happiness] <in cities with a [Public House]>",
+			"[+1 Happiness] from [Entertainment district] tiles [in this city]",
+			"[+1 Gold] from [Wheat] tiles [in this city]",
+			"[+1 Gold] from [Rice] tiles [in this city]",
+			"[+1 Gold] from [Maize] tiles [in this city]",
+			"[+1 Gold] from [Tubers] tiles [in this city]",
+			"[+1 Gold] from [Sugar] tiles [in this city]",
+			"[+1 Gold] from [Fruit] tiles [in this city]",
+		],
+		"requiredTech": "Chemistry"
+	},
+	{
+		"name": "(Industry) Beverage House",
+		"maintenance": 1,
+		"culture": 2,
+		"gold": 1,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Coffee","Sugar","Fruit","Herbs"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Beverage]",
+			"[+1 Culture] <in cities with a [Public House]>",
+			"[+1 Culture] from [Cultural district] tiles [in this city]",
+			"[+1 Culture] from [Entertainment district] tiles [in this city]",
+			"[+1 Gold] from [Coffee] tiles [in this city]",
+			"[+1 Gold] from [Sugar] tiles [in this city]",
+			"[+1 Gold] from [Fruit] tiles [in this city]",
+			"[+1 Gold] from [Herbs] tiles [in this city]",
+		],
+		"requiredTech": "Chemistry"
+	},
+	{
+		"name": "(Industry) Spice Market",
+		"maintenance": 1,
+		"food": 1,
+		"gold": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Rock Salt","Sugar","Spices","Herb"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Spice Blend]",
+			"[+2 Food] <in cities with a [Marketplace]>",
+			"[+1 Gold] from [Rock Salt] tiles [in this city]",
+			"[+1 Gold] from [Sugar] tiles [in this city]",
+			"[+1 Culture] from [Spices] tiles [in this city]",
+		],
+		"requiredTech": "Economics"
+	},
+	{
+		"name": "(Industry) Jeweler",
+		"maintenance": 1,
+		"culture": 1,
+		"gold": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Gold Ore","Silver","Gems","Teal Amber","Illuminite"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Jewelry]",
+			"[+1 Happiness] <in cities with a [Marketplace]>",
+			"[+1 Culture] from [Economic district] tiles [in this city]",
+			"[+1 Gold] from [Economic district] tiles [in this city]",
+			"[+1 Gold] from [Gold Ore] tiles [in this city]",
+			"[+1 Gold] from [Silver] tiles [in this city]",
+			"[+1 Gold] from [Gems] tiles [in this city]",
+			"[+1 Gold] from [Teal Amber] tiles [in this city]",
+			"[+1 Gold] from [Illuminite] tiles [in this city]",
+		],
+		"requiredTech": "Basic Manufacturing"
+	},
+	{
+		"name": "(Industry) Textile Mill",
+		"maintenance": 1,
+		"production": 1,
+		"gold": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Sheep","Cotton","Silk"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Fine Textile]",
+			"Must have an owned [Industiral district] within [3] tiles",
+			"[+1 Culture] from [Entertainment district] tiles [in this city]",
+			"[+1 Culture] from [Cultural district] tiles [in this city]",
+			"[+1 Culture] from [Economic district] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]",
+			"[+1 Production] from [Cotton] tiles [in this city]",
+			"[+1 Culture] from [Silk] tiles [in this city]",
+		],
+		"requiredTech": "Reindustrialization"
+	},
+	{
+		"name": "(Industry) Fume Pavilion",
+		"maintenance": 1,
+		"faith": 2,
+		"gold": 1,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Incense","Herb","Tobacco"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Fume Blend]",
+			"[+1 Faith] from [Entertainment district] tiles [in this city]",
+			"[+1 Faith] from [Cultural district] tiles [in this city]",
+			"[+1 Faith] from [Religious district] tiles [in this city]",
+			"[+1 Gold] from [Incense] tiles [in this city]",
+			"[+1 Gold] from [Herb] tiles [in this city]",
+			"[+1 Gold] from [Tobacco] tiles [in this city]",
+		],
+		"requiredTech": "Chemistry"
+	},
+	{
+		"name": "(Industry) Construction Material Plant",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Granite","Clay","Iron"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [2] [Pollution]",
+			"Must have an owned [Industiral district] within [3] tiles",
+			"[+5]% Production when constructing [All] buildings [in all cities]",
+			"[+1 Production] from [Industrial district] tiles [in this city]",
+			"[+1 Gold] from [Woodmill] tiles [in this city]",
+			"[+1 Production] from [Granite] tiles [in this city]",
+			"[+1 Production] from [Clay] tiles [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]",
+		],
+		"requiredTech": "Reindustrialization"
+	},
+	{
+		"name": "(Industry) Alloy Foundry",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Iron","Aluminum","Titanium"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [2] [Pollution]",
+			"Must have an owned [Industiral district] within [3] tiles",
+			"[+5]% Production when constructing [All] buildings [in all cities]",
+			"[+1 Production] from [Industrial district] tiles [in this city]",
+			"[+1 Gold] from [Woodmill] tiles [in this city]",
+			"[+1 Production] from [Titanium] tiles [in this city]",
+			"[+1 Production] from [Aluminum] tiles [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]",
+			"[+1 Production] from [Uranium] tiles [in this city]",
+			"[+1 Production] from [Copper] tiles [in this city]",
+		],
+		"requiredTech": "Reindustrialization"
+	},
+	{
+		"name": "(Industry) Electronics Compound",
+		"maintenance": 1,
+		"production": 2,
+		"hurryCostModifier": 0,
+		"requiredNearbyImprovedResources": ["Rare Earth","Gold Ore"],
+		"uniques": [
+			"Industry"
+			"Only available <in cities without a [Industry]>",
+			"Provides [1] [Electronic Commodities]",
+			"Must have an owned [Industiral district] within [3] tiles",
+			"[+1 Science] from [Rare Earth] tiles [in this city]",
+			"[+1 Science] from [Copper] tiles [in this city]",
+			"[+1 Science] from [Gold Ore] tiles [in this city]",
+		],
+		"requiredTech": "Electronics"
+	},
+]

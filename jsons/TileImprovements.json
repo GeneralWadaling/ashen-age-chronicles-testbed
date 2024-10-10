@@ -1,0 +1,599 @@
+// TODO:
+
+[
+	//TC and districts
+	{
+		"name": "City center",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Urban", "District",
+			"Ensures a minimum tile yield of [+2 Food, +1 Gold, +1 Production]",
+			"Irremovable", 
+			"Unbuildable", 
+			"Excluded from map editor",
+			"Gives a defensive bonus of [30]%",
+			"Provides [3] [Pollution] <in [Ashen Wasteland] tiles>",
+			"Provides [5] [Pollution] <in [Ashen Creep] tiles>",
+			"Provides [1] [District Limit]",
+			"Provides [2] [Housing]",
+			"Provides [1] [Housing] <starting from the [Outreach era]>",
+			"Provides [1] [Housing] <starting from the [Tempest era]>",
+			"Provides [3] [Housing] <after discovering [Arcology]>",
+			"Provides [6] [Power] <after discovering [Electricity]>",
+			"Provides [2] [Power] <after discovering [Advanced Energy Systems]>",
+			"Provides [1] [Housing] <in tiles adjacent to [Coast] tiles> <in tiles without [Fresh water]>",
+			"Provides [3] [Housing] <in tiles adjacent to [Fresh water] tiles>",
+		],
+        "civilopediaText": [
+			{"text":"Marks the center of a city"},
+			{"text":"Appearance changes with the technological era of the owning civilization"}
+		]
+	},
+	{
+		"name": "Industrial Area",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"production": 3,
+		"uniques": [
+			"Urban", "District", "Industiral district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+			"Provides [1] [Pollution]",
+			"Provides [1] [Pollution] <in [Ashen] tiles>",
+			"[+1 Production] for each adjacent [Quarry]",
+			"[+1 Production] for each adjacent [Mineshaft]",
+			"[+2 Production] <with [1] to [6] neighboring [Strategic resource] tiles>",
+			"[+1 Production] for each adjacent [Urban]",
+			"Pillaging this improvement yields approximately [+50 Production]",
+		],
+	},
+	{
+		"name": "Commerce Hub",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"gold": 3,
+		"uniques": [
+			"Urban", "District", "Economic district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+			"Provides [1] [Pollution] <in [Ashen] tiles>",
+			"[+2 Gold] from [River] tiles",
+			"[+2 Gold] for each adjacent [Marinetime district]",
+			"[+1 Gold] for each adjacent [Urban]",
+			"Pillaging this improvement yields approximately [+50 Gold]",
+		],
+	},
+	{
+		"name": "Institute Complex",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"science": 2,
+		"uniques": [
+			"Urban", "District", "Research district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+			"Provides [1] [Pollution] <in [Ashen] tiles>",
+			"[+2 Science] for each adjacent [Geothermal]",
+			"[+2 Science] for each adjacent [Reef]",
+			"[+1 Science] for each adjacent [Mountain]",
+			"[+2 Science] for each adjacent [Jungle]",
+			"[+2 Science] for each adjacent [Oasis]",
+			"Pillaging this improvement yields approximately [+25 Science]",
+		],
+	},
+	{
+		"name": "Plaza",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"culture": 2,
+		"uniques": [
+			"Urban", "District", "Cultural district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+			"Provides [1] [Pollution] <in [Ashen] tiles>",
+			"[+2 Culture] for each adjacent [Entertainment district]",
+			"[+1 Culture] for each adjacent [City center]",
+			"[+1 Culture] for each adjacent [Urban]",
+			"[+1 Culture] for each adjacent [Residential district]",
+			"Pillaging this improvement yields approximately [+25 Culture]",
+		],
+	},
+	{
+		"name": "Sanctuary",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"faith": 2,
+		"uniques": [
+			"Urban", "District", "Religious district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+			"Provides [1] [Pollution] <in [Ashen] tiles>",
+			"[+3 Faith] for each adjacent [Natural wonder]",
+			"[+1 Faith] for each adjacent [Mountain]",
+			"[+1 Faith] for each adjacent [Woodland]",
+			"[+1 Faith] for each adjacent [Urban]",
+			"Pillaging this improvement yields approximately [+25 Faith]",
+		],
+	},
+	{
+		"name": "Commons Quarter",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"happiness": 2,
+		"uniques": [
+			"Urban", "District", "Entertainment district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"[+1 Happiness] for each adjacent [Luxury resource]",
+			"[+1 Happiness] <with [1] to [6] neighboring [Coast] tiles>",
+			"Provides [1] [District Count]",
+			"Provides [1] [Pollution] <in [Ashen] tiles>",
+			"Pillaging this improvement yields approximately [+30 Gold]",
+		],
+	},
+	{
+		"name": "Garrison",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Urban", "District", "Military district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [30]%",
+			"Provides [1] [District Count]",
+        		"Gain control over [Neutral] tiles in a [1]-tile radius",
+			"Can be built just outside your borders",
+			"Adjacent enemy units ending their turn take [10] damage",
+		],
+	},
+	{
+		"name": "Harbor",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"production": 2,
+		"gold": 1,
+		"uniques": [
+			"Urban", "District", "Marinetime district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [30]%",
+			"Provides [1] [District Count]",
+			"[+2 Gold] for each adjacent [City center]",
+			"[+1 Gold] for each adjacent [Water resource]",
+			"[+2 Production] for each adjacent [Industiral district]",
+        		"Gain control over [Neutral] tiles in a [1]-tile radius",
+			"Adjacent enemy units ending their turn take [10] damage",
+			"Pillaging this improvement yields approximately [+50 Gold]",
+		],
+	},
+	{
+		"name": "Aerodrome",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Urban", "District", "Aviation district",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+		],
+	},
+	{
+		"name": "Spaceport",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Urban", "District",
+			"Removes removable features when built",
+			//"Irremovable", 
+			"Will not be replaced by automated units",
+			"Gives a defensive bonus of [15]%",
+			"Provides [1] [District Count]",
+			"Pillaging this improvement yields approximately [+50 Science]",
+		],
+	},
+
+	// Regular improvements
+	{
+		"name": "Farmland",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"uniques": ["Regular (improvement)",
+			"Provides [1] [Housing]",
+			"Cannot be built on [Ashen] tiles",
+			"Can also be built on tiles adjacent to fresh water",
+			"[+1 Food] <after discovering [Bioengineering]>",
+            		"Pillaging this improvement yields approximately [+18 Food]",
+		],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Aquatic Farm",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"turnsToBuild": 8,
+		"food": 1,
+		"techRequired": "Synthetic Materials",
+		"uniques": ["Regular (improvement)",
+			"Pillaging this improvement yields approximately [+10 Food]",
+		],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Agriwell",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Flood plains","Tundra","Snow","Ashen Wasteland"],
+		"food": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Robotics",
+		"uniques": ["Regular (improvement)",
+			"[+2 Food] from [Ashen] tiles",
+			"[+1 Food] from [Desert] tiles",
+			"[+1 Food] from [Snow] tiles",
+			"[+1 Food] <after discovering [Bioengineering]>",
+            		"Pillaging this improvement yields approximately [+18 Food]",
+		],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Woodmill",
+		"terrainsCanBeBuiltOn": ["Woodland"],
+		"production": 1,
+		"turnsToBuild": 7,
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <after discovering [Smart Industry]>", 
+			"[+1 Food] <after discovering [Conservation]>",
+			"Pillaging this improvement yields approximately [+10 Production]",
+		],
+		"shortcutKey": "L"
+	},
+	{
+		"name": "Mineshaft",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 1,
+		"food": -1,
+		"turnsToBuild": 7,
+		"techRequired": "Prospecting and Surveying",
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <after discovering [Directed Energy Devices]>",
+			 "Pillaging this improvement yields approximately [+20 Production]",
+		],
+		"shortcutKey": "M"
+	},
+	{
+		"name": "Relay",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Woodland","Jungle","Flood plains"],
+		"gold": 1,
+		"turnsToBuild": 7,
+		"techRequired": "Logistics",
+		"uniques": ["Regular (improvement)",
+			"[+1 Gold] <after discovering [Alternative Currency]>", 
+			"Pillaging this improvement yields approximately [+20 Gold]",
+		],
+		"shortcutKey": "T"
+	},
+	{
+		"name": "Gathering Outpost",
+		"terrainsCanBeBuiltOn": ["Ruins","Woodland","Jungle","Wetland"],
+		"turnsToBuild": 7,
+		"techRequired": "Salvaging",
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <in [Ruins] tiles>",
+			"[+1 Food] <in [Woodland] tiles>",
+			"[+1 Food] <in [Jungle] tiles>",
+			"[+1 Food] <in [Wetland] tiles>",
+			"Pillaging this improvement yields approximately [+10 Production]",
+		],
+		"shortcutKey": "C"
+	},
+
+	// Resource-specific
+	{
+		"name": "Plantation",
+		"turnsToBuild": 6,
+		"gold": 1,
+		"techRequired": "Botany",
+		"uniques": ["Regular (improvement)",
+			"[+1 Food] <after discovering [Bioengineering]>", 
+			"Can only be built to improve a resource", 
+			"Pillaging this improvement yields approximately [+10 Gold]",
+		],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Harvest Station",
+		"turnsToBuild": 6,
+		"techRequired": "Replacable Parts",
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <after discovering [Smart Industry]>", 
+			"Can only be built to improve a resource", 
+			"Pillaging this improvement yields approximately [+10 Gold]",
+		],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Enclosure",
+		"turnsToBuild": 8,
+		"food": 1,
+		"techRequired": "Domestication",
+		"uniques": ["Regular (improvement)",
+			"[+1 Science] <after discovering [Conservation]>", 
+			"[+1 Food] <after discovering [Bioengineering]>", 
+			"Can only be built to improve a resource", 
+			"Pillaging this improvement yields approximately [+10 Food]",
+		],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Quarry",
+		"turnsToBuild": 8,
+		"production": 1,
+		"techRequired": "Prospecting and Surveying",
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <after discovering [Directed Energy Devices]>", 
+			"Can only be built to improve a resource", 
+			"Pillaging this improvement yields approximately [+15 Production]",
+		],
+		"shortcutKey": "Q"
+	},
+	{
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"turnsToBuild": 5,
+		"food": 1,
+		"techRequired": "Aquanautics",
+		"uniques": ["Regular (improvement)",
+			"[+1 Science] <after discovering [Conservation]>", 
+			"[+1 Food] <after discovering [Bioengineering]>", 
+			"Can only be built to improve a resource", 
+			"Pillaging this improvement yields approximately [+10 Food]",
+		],
+		"shortcutKey": "F"
+	},
+	{
+		"name": "Refinery",
+		"turnsToBuild": 9,
+		"techRequired": "Combustion",
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <after discovering [Smart Industry]>", 
+			"Can only be built to improve a resource", 
+			"Cannot be built on [Water] tiles", 
+			"Pillaging this improvement yields approximately [+20 Production]",
+		],
+		"shortcutKey": "R"
+	},
+	{
+		"name": "Offshore Platform",
+		"turnsToBuild": 9,
+		"techRequired": "Refrigeration",
+		"uniques": ["Regular (improvement)",
+			"[+1 Production] <after discovering [Smart Industry]>", 
+			"Can only be built to improve a resource", 
+			"Can only be built on [Water] tiles", 
+			"Pillaging this improvement yields approximately [+20 Production]",
+		],
+		"shortcutKey": "P"
+	},
+	{
+		"name": "Extractor",
+		"turnsToBuild": 9,
+		"techRequired": "Advanced Refining",
+		"uniques": ["Regular (improvement)",
+			"Can only be built to improve a resource", 
+			"Pillaging this improvement yields approximately [+20 Production]",
+		],
+		"shortcutKey": "R"
+	},
+
+	// Others
+	{
+		"name": "Wind Farm",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"turnsToBuild": 7,
+		"techRequired": "Reindustrialization",
+		"uniques": ["Regular (improvement)", "Power plant", "Provides [1] [Power]"],
+	},
+	{
+		"name": "Solar Plant",
+		"terrainsCanBeBuiltOn": ["Desert"],
+		"turnsToBuild": 7,
+		"techRequired": "Electronics",
+		"uniques": ["Regular (improvement)", "Power plant", "Provides [1] [Power]"],
+	},
+	{
+		"name": "Geothermal Well",
+		"terrainsCanBeBuiltOn": ["Geothermal"],
+		"production": 2,
+		"turnsToBuild": 9,
+		"techRequired": "Reindustrialization",
+		"uniques": ["Regular (improvement)", "Power plant", "Provides [6] [Power]"],
+		"shortcutKey": "T"
+	},
+	{
+		"name": "Hydrothermal Well",
+		"terrainsCanBeBuiltOn": ["Hydrothermal"],
+		"production": 4,
+		"turnsToBuild": 9,
+		"techRequired": "Ecology",
+		"uniques": ["Regular (improvement)", "Power plant", "Provides [4] [Power]"],
+		"shortcutKey": "T"
+	},
+
+	//Housing
+	{
+		"name": "Residential Block",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 10,
+		"techRequired": "Urbanization",
+		"uniques": [ 
+			"District", "Residential district"
+			"Provides [2] [Pollution] <in [Ashen Wasteland] tiles>",
+			"Provides [3] [Pollution] <in [Ashen Creep] tiles>",
+			"Provides [2] [Housing]",
+			"Provides [1] [Housing] <with [1] to [6] neighboring [City center] tiles>",
+			"Provides [1] [Housing] <with [1] to [6] neighboring [Residential district] tiles>",
+			"Provides [1] [Pollution] <with [1] to [6] neighboring [Industrial district] tiles>",
+			"Gives a defensive bonus of [10]%",
+		],
+		"shortcutKey": "D"
+	},
+	{
+		"name": "Ashen Colony",
+		"terrainsCanBeBuiltOn": ["Ashen Wasteland"],
+		"turnsToBuild": 10,
+		"techRequired": "Hazard Protection",
+		"uniques": [ 
+			"District", "Residential district"
+			"Provides [1] [Housing]",
+			"Provides [1] [Housing] <with [1] to [6] neighboring [City center] tiles>",
+			"Provides [1] [Housing] <with [1] to [6] neighboring [Residential district] tiles>",
+			"Gives a defensive bonus of [10]%",
+		],
+		"shortcutKey": "D"
+	},
+
+	// Removals
+	{
+		"name": "Remove Ruins",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Ruins"],
+		"techRequired": "Salvaging",
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Woodland",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Woodland"],
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Jungle",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Jungle"],
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Wetland",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Wetland"],
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Fallout",
+		"turnsToBuild": 6,
+		"terrainsCanBeBuiltOn": ["Fallout"],
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Ashen Overgrowth",
+		"turnsToBuild": 6,
+		"terrainsCanBeBuiltOn": ["Ashen Overgrowth"],
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Mangrove",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Mangrove"],
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+	{
+		"name": "Remove Ashen Reef",
+		"turnsToBuild": 6,
+		"terrainsCanBeBuiltOn": ["Ashen Reef"],
+		"uniques": ["Regular (improvement)", "Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "X",
+	},
+
+	// Transportation
+	{
+		"name": "Road",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Settlement Infrastructure",
+		"uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn"],
+		"shortcutKey": "R",
+        "civilopediaText": [
+            {"text":"Reduces movement cost to ½ if the other tile also has a Road or Railroad"},
+            {"text":"Reduces movement cost to ⅓ with Machinery", "link":"Technology/Machinery"},
+            {"text":"Requires Engineering to bridge rivers", "link":"Technology/Engineering"}
+        ]
+	},
+	{
+		"name": "Railroad",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Combustion",
+		"uniques": ["Can be built outside your borders", "Costs [2] [Gold] per turn"],
+		"shortcutKey": "R",
+        "civilopediaText": [
+            {"text":"Reduces movement cost to ⅒ if the other tile also has a Railroad"},
+            {"text":"Provides a +25% [Production] bonus to cities connected to the capital by Railroads"}
+        ]
+	},
+
+	//misc
+	{
+		"name": "City ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable","Unbuildable","Provides a random bonus when entered",
+			"Gives a defensive bonus of [30]%",
+		],
+		"civilopediaText": [
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/City ruins",
+				"imageSize": 64
+			},
+			{
+				"Separator": true
+			},
+			{ "text": "A bleak reminder of the cost of waging war" }
+		]
+	},
+	{
+		"name": "Barbarian encampment",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Unbuildable",
+			"Excluded from map editor",
+			"Gives a defensive bonus of [10]%",
+		],
+        "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
+	},
+	{
+		"name": "Ancient ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable"]
+	},
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"]
+	},
+	{
+		"name": "Remove Railroad",
+		"turnsToBuild": 2,
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"]
+	},
+	{
+		"name": "Cancel improvement order",
+		"uniques": ["Can be built outside your borders", "Excluded from map editor"],
+		"shortcutKey": "."
+	},
+]

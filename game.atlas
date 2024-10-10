@@ -1,0 +1,677 @@
+
+game.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+EmojiIcons/Gold
+  rotate: false
+  xy: 520, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Aerodrome
+  rotate: false
+  xy: 4, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Agriwell
+  rotate: false
+  xy: 4, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Airstrip
+  rotate: false
+  xy: 262, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Aquatic Farm
+  rotate: false
+  xy: 520, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Ashen Colony
+  rotate: false
+  xy: 262, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/City center
+  rotate: false
+  xy: 4, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Commerce Hub
+  rotate: false
+  xy: 778, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Commons Quarter
+  rotate: false
+  xy: 1036, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Enclosure
+  rotate: false
+  xy: 1294, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Extractor
+  rotate: false
+  xy: 778, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Farmland
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Garrison
+  rotate: false
+  xy: 778, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Gathering Outpost
+  rotate: false
+  xy: 1036, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Geothermal Well
+  rotate: false
+  xy: 1294, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Harbor
+  rotate: false
+  xy: 1294, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Harvest Station
+  rotate: false
+  xy: 1552, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Hydrothermal Well
+  rotate: false
+  xy: 1552, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Industrial Area
+  rotate: false
+  xy: 1294, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Institute Complex
+  rotate: false
+  xy: 1294, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Alcohol
+  rotate: false
+  xy: 4, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Algae
+  rotate: false
+  xy: 262, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Ascension Alignment
+  rotate: false
+  xy: 4, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Beverage
+  rotate: false
+  xy: 520, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Biomass
+  rotate: false
+  xy: 778, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Clay
+  rotate: false
+  xy: 262, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Coffee
+  rotate: false
+  xy: 520, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Conformity Alignment
+  rotate: false
+  xy: 4, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Corruption
+  rotate: false
+  xy: 262, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/District Count
+  rotate: false
+  xy: 520, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/District Limit
+  rotate: false
+  xy: 778, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Electronic Commodities
+  rotate: false
+  xy: 1036, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Ether
+  rotate: false
+  xy: 4, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Exotic Pet
+  rotate: false
+  xy: 262, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Exotic Plants
+  rotate: false
+  xy: 520, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Fine Textile
+  rotate: false
+  xy: 1294, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Fruit
+  rotate: false
+  xy: 1552, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Fume Blend
+  rotate: false
+  xy: 262, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Game
+  rotate: false
+  xy: 520, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Glowdust
+  rotate: false
+  xy: 1552, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Granite
+  rotate: false
+  xy: 778, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Halcyonite
+  rotate: false
+  xy: 1036, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Hemp
+  rotate: false
+  xy: 778, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Herbs
+  rotate: false
+  xy: 1036, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Housing
+  rotate: false
+  xy: 1294, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Illuminite
+  rotate: false
+  xy: 1036, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Infamy
+  rotate: false
+  xy: 1552, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Jewelry
+  rotate: false
+  xy: 1552, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Liberty Alignment
+  rotate: false
+  xy: 1552, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+
+game2.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+ImprovementIcons/Mineshaft
+  rotate: false
+  xy: 262, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Plaza
+  rotate: false
+  xy: 520, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Refinery
+  rotate: false
+  xy: 4, 470
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Relay
+  rotate: false
+  xy: 262, 728
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Ashen Overgrowth
+  rotate: false
+  xy: 778, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Ashen Reef
+  rotate: false
+  xy: 778, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Jungle
+  rotate: false
+  xy: 1036, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Mangrove
+  rotate: false
+  xy: 1036, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Woodland
+  rotate: false
+  xy: 1036, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Ruins
+  rotate: false
+  xy: 1294, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Remove Wetland
+  rotate: false
+  xy: 4, 212
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Research Outpost
+  rotate: false
+  xy: 262, 470
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Residential Block
+  rotate: false
+  xy: 520, 728
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Sanctuary
+  rotate: false
+  xy: 262, 212
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Seastead
+  rotate: false
+  xy: 520, 470
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Solar Plant
+  rotate: false
+  xy: 1810, 1910
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Spaceport
+  rotate: false
+  xy: 778, 728
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Well
+  rotate: false
+  xy: 778, 212
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Wind Farm
+  rotate: false
+  xy: 4, 4
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Woodmill
+  rotate: false
+  xy: 1036, 470
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Maize
+  rotate: false
+  xy: 4, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Mead
+  rotate: false
+  xy: 4, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Nimbus
+  rotate: false
+  xy: 4, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Niter
+  rotate: false
+  xy: 262, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Old World Artifacts
+  rotate: false
+  xy: 520, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Perfume
+  rotate: false
+  xy: 4, 986
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Petroleum
+  rotate: false
+  xy: 262, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Pollution
+  rotate: false
+  xy: 778, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Power
+  rotate: false
+  xy: 4, 728
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Power Load
+  rotate: false
+  xy: 262, 986
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Prosperity Alignment
+  rotate: false
+  xy: 520, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Purity Alignment
+  rotate: false
+  xy: 778, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Rare Earth
+  rotate: false
+  xy: 1036, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Relics
+  rotate: false
+  xy: 520, 986
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Retro Art
+  rotate: false
+  xy: 778, 986
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Rice
+  rotate: false
+  xy: 1036, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Rock Salt
+  rotate: false
+  xy: 1294, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Rubber
+  rotate: false
+  xy: 1552, 1760
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Spice Blend
+  rotate: false
+  xy: 1036, 986
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Storm Vine
+  rotate: false
+  xy: 1294, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Supremacy Alignment
+  rotate: false
+  xy: 1552, 1502
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Tar Lichen
+  rotate: false
+  xy: 520, 212
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Teal Amber
+  rotate: false
+  xy: 778, 470
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Titanium
+  rotate: false
+  xy: 1036, 728
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Tobacco
+  rotate: false
+  xy: 1294, 986
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+ResourceIcons/Tubers
+  rotate: false
+  xy: 1552, 1244
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,2091 @@
+[
+	// template
+/*
+	
+	// era 0
+	{
+		"columnNumber": 0,
+		"era": "eraname",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 180,
+		"techs": [
+			{
+				"name": "techname",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					"Starting tech"
+				],
+				"prerequisites": [
+					
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			}
+		]
+	},
+
+*/
+
+	// era 1
+	{
+		"columnNumber": 0,
+		"era": "Aftermath era",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 180,
+		"techs": [
+			{
+				"name": "Survival",
+				"row": 11,
+				"quote": "-",
+				"uniques": ["Starting tech"],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Prospecting and Surveying",
+				"row": 10,
+				"quote": "-",
+				"uniques": [],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Salvaging",
+				"row": 12,
+				"quote": "-",
+				"uniques": [],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Aftermath era",
+		"techCost": 35,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Food Security",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Domestication",
+				"row": 1,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+				],
+				"prerequisites": [
+					"Food Security"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Botany",
+				"row": 3,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+				],
+				"prerequisites": [
+					"Food Security"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Education",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Basic Manufacturing",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Engineering",
+				"row": 7,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+					"Roads connect tiles across rivers",
+					
+				],
+				"prerequisites": [
+					"Basic Manufacturing"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Chemistry",
+				"row": 9,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Basic Manufacturing"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Domestic Commerce",
+				"row": 11,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "External Trade",
+				"row": 10,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+					"Enables Open Borders agreements",
+					"Enables Defensive Pacts",
+				],
+				"prerequisites": [
+					"Domestic Commerce"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Settlement Infrastructure",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Construction",
+				"row": 13,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Settlement Infrastructure"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Foundational Security",
+				"row": 17,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Military Hardwares",
+				"row": 16,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Foundational Security"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Ballistics",
+				"row": 18,
+				"cost": 55,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Foundational Security"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Aquanautics",
+				"row": 20,
+				"quote": "-",
+				"uniques": [
+					"Enables embarkation for land units"
+				],
+				"prerequisites": [
+					"Survival"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Shipbuilding",
+				"row": 19,
+				"cost": 45,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Aquanautics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Celestial Navigation",
+				"row": 21,
+				"cost": 125,
+				"quote": "-",
+				"uniques": [
+					"[+1] Movement <for [Embarked] units>",
+					"Enables [Embarked] units to enter ocean tiles"
+				],
+				"prerequisites": [
+					"Aquanautics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+
+	// era 2
+	{
+		"columnNumber": 2,
+		"era": "Recovery era",
+		"techCost": 125,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Biology",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Food Security"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Decontamination",
+				"row": 1,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Biology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Hydroponics",
+				"row": 3,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Biology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Electricity",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Education",
+					"Basic Manufacturing"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Scientific Theory",
+				"row": 4,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					"Enables conversion of city production to [Science]"
+				],
+				"prerequisites": [
+					"Electricity"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Radio",
+				"row": 6,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Electricity"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Reindustrialization",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Basic Manufacturing"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Replacable Parts",
+				"row": 7,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Reindustrialization"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Combustion",
+				"row": 9,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Reindustrialization"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Economics",
+				"row": 11,
+				"quote": "-",
+				"uniques": [
+					"Enables conversion of city production to [Gold]",
+				],
+				"prerequisites": [
+					"Domestic Commerce"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Archaeology",
+				"row": 10,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Economics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Logistics",
+				"row": 12,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Economics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Adminstration",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Settlement Infrastructure"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Civil Service",
+				"row": 13,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Adminstration"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Mass Entertainment",
+				"row": 15,
+				"cost": 225,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Adminstration"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+
+	// era 3
+	{
+		"columnNumber": 3,
+		"era": "Outreach era",
+		"techCost": 350,
+		"buildingCost": 120,
+		"wonderCost": 350,
+		"techs": [
+			{
+				"name": "Refrigeration",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Biology",
+					"Electricity"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Hazard Protection",
+				"row": 1,
+				"cost": 375,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Refrigeration"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Pharmaceuticals",
+				"row": 3,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Refrigeration"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Electronics",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Electricity"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Radar",
+				"row": 6,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Electronics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Urbanization",
+				"row": 11,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Reindustrialization",
+					"Economics",
+					"Adminstration",
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Civil Protection",
+				"row": 10,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Urbanization"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Public Utility",
+				"row": 12,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Urbanization"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Public Works",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Adminstration",
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Architecture",
+				"row": 13,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Public Works"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Military Science",
+				"row": 17,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Foundational Security"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Combined Arms",
+				"row": 16,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Military Science"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Aerodynamics",
+				"row": 20,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Aquanautics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Rocketry",
+				"row": 19,
+				"cost": 485,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Aerodynamics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+	
+	// era 4
+	{
+		"columnNumber": 4,
+		"era": "Neomodern era",
+		"techCost": 780,
+		"buildingCost": 200,
+		"wonderCost": 575,
+		"techs": [
+			{
+				"name": "Ecology",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Refrigeration"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Environmental Engineering",
+				"row": 1,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Ecology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Conservation",
+				"row": 3,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Ecology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Atomic Science",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Electronics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "CBRN Warfare",
+				"row": 4,
+				"cost": 1450,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Atomic Science"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Advanced Refining",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Reindustrialization"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Synthetic Materials",
+				"row": 7,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Refining"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Composites",
+				"row": 9,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Refining"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Digital Computers",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Electronics",
+					"Military Science"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Telecommunications",
+				"row": 13,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Digital Computers"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Advanced Guided Systems",
+				"row": 15,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Digital Computers"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Jet Flight",
+				"row": 20,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Rocketry",
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Orbital Systems",
+				"row": 21,
+				"cost": 1150,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Jet Flight"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+	
+	// era 5
+	{
+		"columnNumber": 5,
+		"era": "Tempest era",
+		"techCost": 1600,
+		"buildingCost": 300,
+		"wonderCost": 825,
+		"techs": [
+			{
+				"name": "Bioengineering",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Ecology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Biomass Processing",
+				"row": 1,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Bioengineering"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Industrial Ecology",
+				"row": 3,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					//"Enables conversion of city production to [Food]"
+				],
+				"prerequisites": [
+					"Bioengineering"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Advanced Energy Systems",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Atomic Science"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Nuclear Fusion",
+				"row": 4,
+				"cost": 3100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Energy Systems"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Directed Energy Devices",
+				"row": 6,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Energy Systems"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Nanotechnology",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Refining"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Adaptive Stealth",
+				"row": 9,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Bioengineering"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Social Dynamics",
+				"row": 11,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Urbanization",
+					"Digital Computers",
+					"Public Works",
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Euthenics",
+				"row": 10,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Social Dynamics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Alternative Currency",
+				"row": 12,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Social Dynamics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Robotics",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Digital Computers"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Exoskeletons",
+				"row": 13,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Robotics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Mechas",
+				"row": 15,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Robotics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Autonomous Systems",
+				"row": 17,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Digital Computers"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Smart Industry",
+				"row": 16,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Autonomous Systems"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Artificial Intelligence",
+				"row": 18,
+				"cost": 2350,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Autonomous Systems"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+	
+	// era 6
+	{
+		"columnNumber": 6,
+		"era": "Ether era",
+		"techCost": 3100,
+		"buildingCost": 500,
+		"wonderCost": 1150,
+		"techs": [
+			{
+				"name": "Reclamation",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Bioengineering"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Terraforming",
+				"row": 3,
+				"cost": 5100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Reclamation"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Particle Physics",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Energy Systems"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Energy Weapons",
+				"row": 4,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Particle Physics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Field-Particle Manipulation",
+				"row": 6,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Particle Physics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Etherology",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Nanotechnology",
+					"Bioengineering"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Deep Ether Information",
+				"row": 7,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Etherology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Memory Gels",
+				"row": 9,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Etherology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Posthumanism Culture",
+				"row": 11,
+				"quote": "-",
+				"uniques": [
+					"Enables conversion of city production to [Culture]"
+				],
+				"prerequisites": [
+					"Social Dynamics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Arcology",
+				"row": 10,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Posthumanism Culture"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Augmentation",
+				"row": 12,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Posthumanism Culture"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Cybernetics",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Robotics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Neural-Computer Interface",
+				"row": 13,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Cybernetics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Augmentation",
+				"row": 15,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Cybernetics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Quantum Computation",
+				"row": 17,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Robotics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Synthetic Mind",
+				"row": 16,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Quantum Computation"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Predictive Systems",
+				"row": 18,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Quantum Computation"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Offworld Mission",
+				"row": 20,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Robotics",
+					"Jet Flight",
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Void Flight",
+				"row": 19,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Offworld Mission"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Offworld Colony",
+				"row": 21,
+				"cost": 4100,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Offworld Mission"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+	
+	// era 7
+	{
+		"columnNumber": 7,
+		"era": "New Vision era",
+		"techCost": 5100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Advanced Biotech",
+				"row": 2,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Reclamation"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Biomachines",
+				"row": 1,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Biotech"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Designer Lifefroms",
+				"row": 3,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Advanced Biotech"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Levitation Engines",
+				"row": 5,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Particle Physics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Gravity Reactors",
+				"row": 4,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Levitation Engines"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Levships",
+				"row": 6,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Levitation Engines"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Nimbus Weaving",
+				"row": 8,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Etherology"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Matter Conversion",
+				"row": 7,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Nimbus Weaving"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Exotic Matter",
+				"row": 9,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Nimbus Weaving"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Cognition",
+				"row": 11,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Posthumanism Culture"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Hive Mind",
+				"row": 10,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Cognition"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Psionics",
+				"row": 12,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Cognition"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Metamaterials",
+				"row": 14,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Cybernetics"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Intelligent Materials",
+				"row": 13,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Metamaterials"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Megastructure",
+				"row": 15,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Metamaterials"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Time-Space Theory",
+				"row": 20,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Offworld Mission"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "Dimensional Science",
+				"row": 19,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Time-Space Theory"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+			{
+				"name": "FTL Flight",
+				"row": 21,
+				"cost": 6400,
+				"quote": "-",
+				"uniques": [
+					
+				],
+				"prerequisites": [
+					"Time-Space Theory"
+				],
+				"civilopediaText": [
+					{
+						"text": "-"
+					}
+				]
+			},
+		]
+	},
+
+	// era 8
+	{
+		"columnNumber": 8,
+		"era": "Transcendental era",
+		"techCost": 9500,
+		"buildingCost": 1660,
+		"wonderCost": 3320,
+		"techs": [
+			{
+				"name": "Transcendent Tech",
+				"row": 8,
+				"quote": "-",
+				"prerequisites": [
+					"Advanced Biotech",
+					"Levitation Engines",
+					"Nimbus Weaving",
+					"Cognition",
+					"Metamaterials"
+				],
+				"uniques": [
+					"Comment [Sometimes the end is not the end.]",
+					"Can be continually researched"
+				]
+			}
+		]
+	}
+]

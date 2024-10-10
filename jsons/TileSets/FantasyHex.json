@@ -1,0 +1,25 @@
+{
+    "useColorAsBaseTerrain": "false",
+    "fallbackTileSet": "FantasyHex",
+    "ruleVariants": {
+
+	//ruins
+	"Ashen Wasteland+Ruins": ["Ashen Wasteland","Ruins-Ashen"],
+	"Ashen Creep+Ruins": ["Ashen Creep","Ruins-Infested"],
+	"Desert+Ruins": ["Desert","Ruins-Sand"],
+	"Grassland+Ruins": ["Grassland","Ruins-Moss"],
+	"Tundra+Ruins": ["Tundra","Ruins-Snow"],
+	"Snow+Ruins": ["Snow","Ruins-Snow"],
+
+	//ancient ruins (to be renamed)
+	"Ashen Wasteland+Ancient ruins": ["Ashen Wasteland","Ancient ruins-Ashen"],
+	"Ashen Creep+Ashen Overgrowth+Ancient ruins": ["Ashen Creep","Ashen Overgrowth","Ancient ruins-Ashen"],
+	"Ashen Creep+Ancient ruins": ["Ashen Creep","Ancient ruins-Ashen"],
+
+	//farmland variants
+	//wheat
+	"Plains+Farmland+Wheat": ["Plains","Farmland","FarmlandWheat"],
+	"Desert+Farmland+Wheat": ["Desert","Farmland","FarmlandWheat"],
+	"Plains+Flood plains+Farmland+Wheat": ["Plains","Flood plains","Farmland","FarmlandWheat"],
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Global uniques",
+	"uniques": [
+		//unhappiness
+		"[-25]% growth [in all cities] <when between [-5] and [0] Happiness>",
+		"[-50]% growth [in all cities] <when between [-10] and [-6] Happiness>",
+		"Nullifies Growth [in all cities] <when below [-10] Happiness>",
+		"[-33]% [Production] [in all cities] <when below [-10] Happiness>",
+		"[-25]% Strength <for [All] units> <when below [-10] Happiness>",
+		"Cannot build [Settler] units <when below [-10] Happiness>",
+
+		//housing limiting population (doesn't work for the moment)
+		/*
+		"Nullifies Growth [in this city] <when number of [population] is more than [Housing]> <in this city>",
+		*/
+
+		//pollution
+		"[-15]% growth [in this city] <when between [4] and [6] [Pollution]>",
+		"[-25]% growth [in this city] <when between [7] and [8] [Pollution]>",
+		"[-50]% growth [in this city] <when between [9] and [10] [Pollution]>",
+		"Nullifies Growth [in this city] <when above [15] [Pollution]>",
+
+		// pop provides district limit (scrapped due to loop error)
+		/*
+		"Provides [1] [District Limit] <in this city> <when above [5] [Housing]>",
+		"Provides [1] [District Limit] <in this city> <when above [10] [Housing]>",
+		"Provides [1] [District Limit] <in this city> <when above [15] [Housing]>",
+		"Provides [1] [District Limit] <in this city> <when above [20] [Housing]>",
+		*/
+
+		//rebels
+		"Rebel units may spawn <when below [-20] Happiness> <before the [Tempest era]>",
+		"Rebel units may spawn <when below [-10] Happiness> <starting from the [Tempest era]>",
+		
+		//bldg event triggers (testing)
+		"Triggers a [Food Storage Perk] event <upon constructing [Food Storage]> <when number of [[Food Storage] Buildings] is less than [2]>",
+		"Triggers a [Hydroponic Farm Perk] event <upon constructing [Hydroponic Farm]> <when number of [[Hydroponic Farm] Buildings] is less than [2]>",
+		"Triggers a [Synthetic Food Plant Perk] event <upon constructing [Synthetic Food Plant]> <when number of [[Synthetic Food Plant] Buildings] is less than [2]>",
+		"Triggers a [Waterworks Perk] event <upon constructing [Waterworks]> <when number of [[Waterworks] Buildings] is less than [2]>",
+		"Triggers a [Hospital Perk] event <upon constructing [Hospital]> <when number of [[Hospital] Buildings] is less than [2]>",
+		"Triggers a [Biotech Lab Perk] event <upon constructing [Biotech Lab]> <when number of [[Biotech Lab] Buildings] is less than [2]>",
+		"Triggers a [Incubation Vats Perk] event <upon constructing [Incubation Vats]> <when number of [[Incubation Vats] Buildings] is less than [2]>",
+		"Triggers a [Workshop Perk] event <upon constructing [Workshop]> <when number of [[Workshop] Buildings] is less than [2]>",
+		"Triggers a [Prefab Foundry Perk] event <upon constructing [Prefab Foundry]> <when number of [[Prefab Foundry] Buildings] is less than [2]>",
+		"Triggers a [Factory Perk] event <upon constructing [Factory]> <when number of [[Factory] Buildings] is less than [2]>",
+		"Triggers a [Semiautomatic Assembly Plant Perk] event <upon constructing [Semiautomatic Assembly Plant]> <when number of [[Semiautomatic Assembly Plant] Buildings] is less than [2]>",
+		"Triggers a [Matter Fabricator Perk] event <upon constructing [Matter Fabricator]> <when number of [[Matter Fabricator] Buildings] is less than [2]>",
+		"Triggers a [Marketplace Perk] event <upon constructing [Marketplacer]> <when number of [[Marketplace] Buildings] is less than [2]>",
+		"Triggers a [Trade Warehouse Perk] event <upon constructing [Trade Warehouse]> <when number of [[Trade Warehouse] Buildings] is less than [2]>",
+		"Triggers a [Customs House Perk] event <upon constructing [Customs House]> <when number of [[Customs House] Buildings] is less than [2]>",
+		"Triggers a [Financial Institute Perk] event <upon constructing [Financial Institute]> <when number of [[Financial Institute] Buildings] is less than [2]>",
+		"Triggers a [Public School Perk] event <upon constructing [Public School]> <when number of [[Public School] Buildings] is less than [2]>",
+		"Triggers a [Academy Perk] event <upon constructing [Academy]> <when number of [[Academy] Buildings] is less than [2]>",
+		"Triggers a [Research Lab Perk] event <upon constructing [Research Lab]> <when number of [[Research Lab] Buildings] is less than [2]>",
+		"Triggers a [Supercomputer Center Perk] event <upon constructing [Supercomputer Center]> <when number of [[Supercomputer Center] Buildings] is less than [2]>",
+		"Triggers a [Quantum Cogitator Perk] event <upon constructing [Quantum Cogitator]> <when number of [[Quantum Cogitator] Buildings] is less than [2]>",
+		"Triggers a [Monument - Founding Virtues] event <upon constructing [Monument]> <when number of [[Monument] Buildings] is less than [2]>",
+		"Triggers a [Archives Perk] event <upon constructing [Archives]> <when number of [[Archives] Buildings] is less than [2]>",
+		"Triggers a [Broadcast Station Perk] event <upon constructing [Broadcast Station]> <when number of [[Broadcast Station] Buildings] is less than [2]>",
+		"Triggers a [Network Center Perk] event <upon constructing [Network Center]> <when number of [[Network Center] Buildings] is less than [2]>",
+		"Triggers a [Concert Hall Perk] event <upon constructing [Concert Hall]> <when number of [[Concert Hall] Buildings] is less than [2]>",
+	]
+}

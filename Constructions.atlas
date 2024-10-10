@@ -1,0 +1,705 @@
+
+Constructions.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+BuildingIcons/(Industry) Alcohol Brewery
+  rotate: false
+  xy: 4, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Alloy Foundry
+  rotate: false
+  xy: 4, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Beverage House
+  rotate: false
+  xy: 262, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Construction Material Plant
+  rotate: false
+  xy: 4, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Electronics Compound
+  rotate: false
+  xy: 262, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Fume Pavilion
+  rotate: false
+  xy: 520, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Jeweler
+  rotate: false
+  xy: 4, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Spice Market
+  rotate: false
+  xy: 262, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/(Industry) Textile Mill
+  rotate: false
+  xy: 520, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Academy
+  rotate: false
+  xy: 778, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Aerodrome (Construction)
+  rotate: false
+  xy: 4, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Airport
+  rotate: false
+  xy: 262, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Armory
+  rotate: false
+  xy: 520, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Barracks
+  rotate: false
+  xy: 778, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Bioreactor
+  rotate: false
+  xy: 1036, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Biotech Lab
+  rotate: false
+  xy: 4, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Broadcast Station
+  rotate: false
+  xy: 262, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Bunker Network
+  rotate: false
+  xy: 520, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Cargo Port
+  rotate: false
+  xy: 778, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Coaching Inn
+  rotate: false
+  xy: 1036, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Combustion Power Plant
+  rotate: false
+  xy: 1294, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Commerce Hub (Construction)
+  rotate: false
+  xy: 4, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Commons Quarter (Construction)
+  rotate: false
+  xy: 262, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Concert Hall
+  rotate: false
+  xy: 520, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Construction Office
+  rotate: false
+  xy: 778, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Creative Media Studio
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Customs House
+  rotate: false
+  xy: 1294, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Defense HQ
+  rotate: false
+  xy: 1552, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Emplacements
+  rotate: false
+  xy: 262, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Energy Exchange
+  rotate: false
+  xy: 520, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Engineering Depot
+  rotate: false
+  xy: 778, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Ether Matrix
+  rotate: false
+  xy: 1036, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Factory
+  rotate: false
+  xy: 1294, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Financial Institute
+  rotate: false
+  xy: 1552, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Fishery
+  rotate: false
+  xy: 520, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Food Storage
+  rotate: false
+  xy: 778, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Force Shield Dome
+  rotate: false
+  xy: 1036, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Garrison (Construction)
+  rotate: false
+  xy: 1294, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Gravity Reactor
+  rotate: false
+  xy: 1552, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hangar
+  rotate: false
+  xy: 778, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Harbor (Construction)
+  rotate: false
+  xy: 1036, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hazard Equipment Depot
+  rotate: false
+  xy: 1294, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hospital
+  rotate: false
+  xy: 1552, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hydroelectric Plant
+  rotate: false
+  xy: 1036, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hydroponic Farm
+  rotate: false
+  xy: 1294, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Incubation Vats
+  rotate: false
+  xy: 1552, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Industrial Area (Construction)
+  rotate: false
+  xy: 1294, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Institute Complex (Construction)
+  rotate: false
+  xy: 1552, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Launch Bays
+  rotate: false
+  xy: 1552, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+
+Constructions2.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+BuildingIcons/Levship Gantry
+  rotate: false
+  xy: 4, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Mainframe
+  rotate: false
+  xy: 4, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Maintenance Station
+  rotate: false
+  xy: 262, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Marketplace
+  rotate: false
+  xy: 4, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Mass Driver
+  rotate: false
+  xy: 262, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Matter Fabricator
+  rotate: false
+  xy: 520, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Memorial
+  rotate: false
+  xy: 4, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Memory Bank
+  rotate: false
+  xy: 262, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Museum
+  rotate: false
+  xy: 520, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Naval Collage
+  rotate: false
+  xy: 778, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Neoculture Center
+  rotate: false
+  xy: 4, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Network Center
+  rotate: false
+  xy: 262, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Neuromatter Injection Center
+  rotate: false
+  xy: 520, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Nimbus Reactor
+  rotate: false
+  xy: 778, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Nuclear Reactor
+  rotate: false
+  xy: 1036, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Ordnance Depot
+  rotate: false
+  xy: 4, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Perimeter Fortification
+  rotate: false
+  xy: 262, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Petrol Plant
+  rotate: false
+  xy: 520, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Plaza (Construction)
+  rotate: false
+  xy: 778, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Pleasure Gardens
+  rotate: false
+  xy: 1036, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Police Headquarters
+  rotate: false
+  xy: 1294, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Power Plant
+  rotate: false
+  xy: 4, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Prefab Foundry
+  rotate: false
+  xy: 262, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Proxy Office
+  rotate: false
+  xy: 520, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Psi-Nexus
+  rotate: false
+  xy: 778, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Public House
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Public School
+  rotate: false
+  xy: 1294, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Quantum Cogitator
+  rotate: false
+  xy: 1552, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Reactor
+  rotate: false
+  xy: 262, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Recycling Facility
+  rotate: false
+  xy: 520, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Research Lab
+  rotate: false
+  xy: 778, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Research Lab - Applied Research
+  rotate: false
+  xy: 1036, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Research Lab - Theoretical Research
+  rotate: false
+  xy: 1036, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Sanctuary (Construction)
+  rotate: false
+  xy: 1294, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Sanctum
+  rotate: false
+  xy: 1552, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Scrubbing Tower
+  rotate: false
+  xy: 520, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Seaport
+  rotate: false
+  xy: 778, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Self-Regulating Utility Systems
+  rotate: false
+  xy: 1036, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Semiautomatic Assembly Plant
+  rotate: false
+  xy: 1294, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Shipyard
+  rotate: false
+  xy: 1552, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Shrine
+  rotate: false
+  xy: 778, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Spaceport (Construction)
+  rotate: false
+  xy: 1036, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Supercomputer Lab
+  rotate: false
+  xy: 1294, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Surveillance Center
+  rotate: false
+  xy: 1552, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Synthetic Food Plant
+  rotate: false
+  xy: 1036, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Synthetic Fuel Plant
+  rotate: false
+  xy: 1294, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Trade Warehouse
+  rotate: false
+  xy: 1552, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Waste Facility
+  rotate: false
+  xy: 1294, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Waterworks
+  rotate: false
+  xy: 1552, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+BuildingIcons/Workshop
+  rotate: false
+  xy: 1552, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1

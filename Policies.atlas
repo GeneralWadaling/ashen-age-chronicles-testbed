@@ -1,0 +1,433 @@
+
+Policies.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+PolicyBranchIcons/Adaption
+  rotate: false
+  xy: 4, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Ascension
+  rotate: false
+  xy: 262, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Cohesion
+  rotate: false
+  xy: 262, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Conformity
+  rotate: false
+  xy: 520, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Consolidation
+  rotate: false
+  xy: 4, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Foundation
+  rotate: false
+  xy: 778, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Liberty
+  rotate: false
+  xy: 520, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Merit
+  rotate: false
+  xy: 1294, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Progress
+  rotate: false
+  xy: 520, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Prosperity
+  rotate: false
+  xy: 778, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Purity
+  rotate: false
+  xy: 1294, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyBranchIcons/Supremacy
+  rotate: false
+  xy: 1036, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Academy - Elite Education
+  rotate: false
+  xy: 4, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Academy - Universal Education
+  rotate: false
+  xy: 4, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Biotech Lab - Agriculture
+  rotate: false
+  xy: 4, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Biotech Lab - Research
+  rotate: false
+  xy: 4, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Customs House - Crossing Duties
+  rotate: false
+  xy: 262, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Customs House - Destination Duties
+  rotate: false
+  xy: 262, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Ether Matrix - Dream
+  rotate: false
+  xy: 520, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Ether Matrix - Future
+  rotate: false
+  xy: 520, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Exchange Center - Dynamic Rate
+  rotate: false
+  xy: 778, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Exchange Center - Fixed Rate
+  rotate: false
+  xy: 778, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Factory - Cannery
+  rotate: false
+  xy: 4, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Factory - Prototyping Plants
+  rotate: false
+  xy: 4, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Financial Institute - Development
+  rotate: false
+  xy: 262, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Financial Institute - Profitability
+  rotate: false
+  xy: 262, 778
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Food Storage - Colony Support
+  rotate: false
+  xy: 520, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Food Storage - Population
+  rotate: false
+  xy: 520, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Hospital - Care Wards
+  rotate: false
+  xy: 1036, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Hospital - Heavy Duty Wards
+  rotate: false
+  xy: 1036, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Hydroponic Farm - Extensive
+  rotate: false
+  xy: 4, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Hydroponic Farm - Intensive
+  rotate: false
+  xy: 4, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Incubation Vats - Cloning Vats
+  rotate: false
+  xy: 262, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Incubation Vats - Growth
+  rotate: false
+  xy: 262, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Marketplace - Open Markets
+  rotate: false
+  xy: 778, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Marketplace - Restricted Markets
+  rotate: false
+  xy: 778, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Matter Fabricator - Creative Research
+  rotate: false
+  xy: 1036, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Matter Fabricator - Strategic Resource
+  rotate: false
+  xy: 1036, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Monument - Founder
+  rotate: false
+  xy: 4, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Prefab Foundry - Development
+  rotate: false
+  xy: 262, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Prefab Foundry - Infrastructure
+  rotate: false
+  xy: 262, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Public School - Art School
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Public School - Clerk School
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Public School - Pioneer School
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Public School - Worker School
+  rotate: false
+  xy: 1036, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Quantum Cogitator - Optimization Core
+  rotate: false
+  xy: 1552, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Quantum Cogitator - Research Core
+  rotate: false
+  xy: 1552, 1552
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Research Lab - Applied Research
+  rotate: false
+  xy: 262, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Research Lab - Theoretical Research
+  rotate: false
+  xy: 262, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Semiautomatic Assembly Plant - Assisted Laboring
+  rotate: false
+  xy: 520, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Semiautomatic Assembly Plant - Higher Automation
+  rotate: false
+  xy: 520, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Supercomputer Center - Computation Power
+  rotate: false
+  xy: 778, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Supercomputer Center - Free Tech
+  rotate: false
+  xy: 778, 520
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Synthetic Food Plant - Additives
+  rotate: false
+  xy: 1294, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Synthetic Food Plant - Nutrient-Dense Food
+  rotate: false
+  xy: 1294, 1036
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Trade Warehouse - Attended Convoy
+  rotate: false
+  xy: 1552, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Trade Warehouse - Compact Convoy
+  rotate: false
+  xy: 1552, 1294
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Waterworks - Agriculture
+  rotate: false
+  xy: 520, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Waterworks - Population
+  rotate: false
+  xy: 520, 4
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Workshop - Productivity
+  rotate: false
+  xy: 778, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+PolicyIcons/Workshop - Refurbishment
+  rotate: false
+  xy: 778, 262
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1

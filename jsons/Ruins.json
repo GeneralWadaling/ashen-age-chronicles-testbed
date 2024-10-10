@@ -1,0 +1,212 @@
+[
+	// no rewards
+	{
+		"name": "collapsed ruins",
+		"notification": "The ruins collapsed before we could find anything meaningful and injured our unit",
+		"uniques": [
+			"[This Unit] takes [10] damage",
+		],
+		"color": "#7d7d7d"
+	},
+	{
+		"name": "empty ruins",
+		"notification": "This ruins has nothing of value or interest",
+		"uniques": [
+			"Only available <after turn number [45]>",
+		],
+		"color": "#7d7d7d"
+	},
+
+	// relics and artifacts
+	{
+		"name": "discovered artifacts",
+		"notification": "We have discovered some minor artifacts in the ruins",
+		"uniques": [
+			"Gain [20] [Culture]",
+		],
+		"color": "#cf8ff7"
+	},
+	{
+		"name": "discovered artifacts of glorious past",
+		"notification": "We have discovered artifacts that tell story of our forgotten yet glorious past",
+		"uniques": [
+			"Gain [50] [Culture]",
+		],
+		"color": "#cf8ff7"
+	},
+
+	// stashes	
+	{
+        	"name": "a stash of valuables",
+        	"notification": "", // trigger notification only
+        	"uniques": [
+			"Gain [50]-[100] [Gold]",
+		],
+        	"color": "#ffeb7f"
+	},
+	{
+        	"name": "a stash of preserved food",
+        	"notification": "We've found a stash of preserved food",
+        	"uniques": [
+			"Triggers a [Food stash] event",
+			"Only available <before turn number [25]>",
+		],
+		"color": "#81c784"
+	},
+	{
+        	"name": "a large hidden stockpile of preserved food",
+        	"notification": "We've found a large stockpile of food",
+        	"uniques": [
+			"Triggers a [Food stockpile] event",
+		],
+		"color": "#81c784"
+	},
+	{
+        	"name": "a stash of goods",
+        	"notification": "We've found a stash of useable goods and materials",
+        	"uniques": [
+			"Triggers a [A stash of goods] event",
+			"Only available <before discovering [Reindustrialization]>",
+		],
+		"color": "#f77622"
+	},
+
+	//ambush
+	{
+		"name": "minor ambush",
+		"notification": "Our unit has encountered a minor ambush in the ruins, survivors gained minor experience",
+		"uniques": [
+			"[This Unit] takes [10] damage",
+			"[This Unit] gains [5] XP",
+		],
+		"color": "8c0000"
+	},
+	{
+		"name": "organized ambush",
+		"notification": "Our unit has been ambused in the ruins, survivors gained experience",
+		"uniques": [
+			"[This Unit] takes [25] damage",
+			"[This Unit] gains [15] XP",
+		],
+		"color": "8c0000"
+	},
+	{
+		"name": "overwhelming ambush",
+		"notification": "Our unit is met by an overwhelming ambush while searching ruins, survivors gained major experience",
+		"uniques": [
+			"[This Unit] takes [50] damage",
+			"[This Unit] gains [25] XP",
+		],
+		"color": "8c0000"
+	},
+	{
+		"name": "fatal ambush",
+		"notification": "We lost a unit in the ruins to a fatal ambush",
+		"uniques": [
+			"[This Unit] takes [100] damage"
+		],
+		"color": "8c0000"
+	},
+
+	// military
+	{
+		"name": "military logs",
+		"notification": "Our unit retrieved a military log in the ruins and has become more experienced",
+		"uniques": [
+			"[This Unit] gains [10] XP"
+		],
+		"color": "ff0000"
+	},
+/*
+	{
+		"name": "advanced weaponry",
+		"notification": "Our unit found better combat equipment in the ruins",
+		"uniques": [
+			"[This Unit] upgrades for free including special upgrades"
+		],
+		"color": "ff0000"
+	},
+*/
+
+	// map
+	{
+		"name": "damaged map",
+		"notification": "We have discovered a set of damaged local maps in the ruins",
+		"uniques": [
+			"From a randomly chosen tile [4] tiles away from the ruins, reveal tiles up to [4] tiles away with [70]% chance"
+		],
+		"color": "856a2d"
+	},
+	{
+		"name": "intact regional map",
+		"notification": "We have discovered a set of regional maps complete with information in the ruins",
+		"uniques": [
+			"From a randomly chosen tile [4] tiles away from the ruins, reveal tiles up to [6] tiles away with [80]% chance"
+		],
+		"color": "856a2d"
+	},
+
+	// refuge
+	{
+		"name": "refuge of unwelcoming refugees",
+		"notification": "We've found a group of refugees in the ruins",
+		"uniques": [
+			"Triggers a [Unwelcoming refugees] event",
+		],
+	},
+	{
+		"name": "refuge of exhausted refugees",
+		"notification": "We've found a group of refugees in the ruins",
+		"uniques": [
+			"Triggers a [Exhausted refugees] event",
+		],
+	},
+	{
+		"name": "refuge of armed refugees (peaceful)",
+		"notification": "We've found a group of refugees in the ruins",
+		"uniques": [
+			"Triggers a [Armed refugees] event",
+			"Only available <when number of [Infamy] is less than [8]>",
+		],
+	},
+	{
+		"name": "refuge of armed refugees (hostile)",
+		"notification": "We've found a group of armed refugees in the ruins, but they turned hostile soon as we made contact with them.",
+		"uniques": [
+			"Only available <when number of [Infamy] is more than [4]>",
+			"[This Unit] takes [30] damage",
+			"[This Unit] gains [10] XP",
+		],
+		"color": "8c0000"
+	},
+	{
+		"name": "refuge of refugees",
+		"notification": "We've found a group of refugees in the ruins",
+		"uniques": [
+			"Triggers a [Refugees] event",
+		],
+	},
+	{
+		"name": "deserted refuge",
+		"notification": "We've found a deserted refuge in the ruins",
+		"uniques": [
+			"Triggers a [Deserted refuge] event",
+		],
+	},
+	{
+		"name": "mass grave",
+		"notification": "We've found a mass grave in the ruins",
+		"uniques": [
+			"Triggers a [Mass grave] event",
+		],
+	},
+
+	// scrappers
+	{
+		"name": "scrappers",
+		"notification": "Scrappers has occupied the ruins before us.",
+		"uniques": [
+			"Triggers a [Scrappers] event",
+		],
+	},
+]

@@ -1,0 +1,1312 @@
+[
+
+// Template
+/*
+	{
+	"name": "eventname",
+	"text": "",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"",
+		"uniques":
+			[
+			],
+		},
+	},
+
+*/
+
+
+
+//Ruins
+
+	// stashes
+	{
+	"name": "Food stash",
+	"text": "We've found a stash of well-preserved pre-cataclysm food in the ruins, now at our disposal.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"This shall keep our people fed for a short while.",
+		"uniques":
+			[
+			"[+3 Food] [in your cities] <for [4] turns> <when number of [Cities] is less than [4]>",
+			"[+3 Food] [in your cities] <for [3] turns> <when number of [Cities] is between [4] and [6]>",
+			"[+3 Food] [in your cities] <for [2] turns> <when number of [Cities] is more than [6]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Food stockpile",
+	"text": "We've found a large hidden stockpie of food in the ruins, however, some food might have become spoiled in poor storage conditions. What should we do about these food?"
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Only take those that are safely edible.",
+		"uniques":
+			[
+			"[+3 Food] [in your cities] <for [6] turns> <when number of [Cities] is less than [4]>",
+			"[+3 Food] [in your cities] <for [5] turns> <when number of [Cities] is between [4] and [6]>",
+			"[+3 Food] [in your cities] <for [4] turns> <when number of [Cities] is more than [6]>",
+			],
+		},
+		{
+		"text":"Let's hope that our people has a strong gut. We'll take all.",
+		"uniques":
+			[
+			"[+5 Food] [in your cities] <for [6] turns> <when number of [Cities] is less than [4]>",
+			"[+5 Food] [in your cities] <for [5] turns> <when number of [Cities] is between [4] and [6]>",
+			"[+5 Food] [in your cities] <for [4] turns> <when number of [Cities] is more than [6]>",
+			"Triggers a [Mass food poisoning] event <with [25]% chance>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Mass food poisoning",
+	"text": "It turned out that accepting unsafe food sources is not a good choice."
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Ouch.",
+		"uniques":
+			[
+			"[-10]% growth [in your cities] <for [6] turns>"
+			],
+		},
+		],
+	},
+	{
+	"name": "A stash of goods",
+	"text": "We've found a stash of useable goods and materials.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Use them in the priority constructions of our cities.",
+		"uniques":
+			[
+			"[+5 Production] [in your cities] <for [5] turns> <when number of [Cities] is less than [4]>",
+			"[+3 Production] [in your cities] <for [5] turns> <when number of [Cities] is between [3] and [6]>",
+			"[+2 Production] [in your cities] <for [5] turns> <when number of [Cities] is more than [6]>",
+			],
+		},
+		{
+		"text":"Sell them for funds.",
+		"uniques":
+			[
+			"Gain [50]-[100] [Gold]",
+			],
+		},
+		],
+	},
+
+	// refuge
+	{
+	"name": "Unwelcoming refugees",
+	"text": "We've found a group of refugees in the ruins. They do not welcome us, but nevertheless they have approached us cautiously, asking what we want from their temporary refuge.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"We don't need them. Kindly ask these squatters to leave.",
+		"uniques":
+			[
+			"(Do nothing.)",
+			],
+		},
+		{
+		"text":"Plunder the refuge.",
+		"uniques":
+			[
+			"Warning: This will largely worsen your reputation",
+			"Gain [20]-[100] [Gold]",
+			"Triggers a [Reputation worsened] event",
+			],
+		},
+		{
+		"text":"Demand their tribute by force.",
+		"uniques":
+			[
+			"Warning: This will negatively affect your reputation.",
+			"Gain [20]-[40] [Gold]",
+			"Triggers a [Reputation worsened] event",
+			],
+		},
+		{
+		"text":"Recruit those who are willing to work for us for a living.",
+		"uniques":
+			[
+			"These refugees will pledge to your side as workers.",
+			"Free [Worker] appears",
+			"Unavailable <when number of [Infamy] is more than [7]> <hidden from users>",
+			],
+		},
+		]
+	},
+	{
+	"name": "Refugees",
+	"text": "We've found a group of refugees in the ruins. What do we do with them?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"We don't need them. Kindly ask these squatters to leave.",
+		"uniques":
+			[
+			"(Do nothing.)",
+			],
+		},
+		{
+		"text":"Plunder the refuge.",
+		"uniques":
+			[
+			"Warning: This will largely worsen your reputation.",
+			"Gain [20]-[100] [Gold]",
+			"Triggers a [Reputation largely worsened] event",
+			],
+		},
+		{
+		"text":"Demand their tribute by force.",
+		"uniques":
+			[
+			"Warning: This will negatively affect your reputation.",
+			"Gain [20]-[40] [Gold]",
+			"Triggers a [Reputation worsened] event",
+			],
+		},
+		{
+		"text":"Collect information form these refugees.",
+		"uniques":
+			[
+			"Gain [5]-[20] [Science]",
+			"Unavailable <when number of [Infamy] is more than [5]> <hidden from users>",
+			],
+		},
+		{
+		"text":"Recruit those who are willing to work for us for a living.",
+		"uniques":
+			[
+			"These refugees will pledge to your side as workers.",
+			"Free [Worker] appears",
+			"Unavailable <when number of [Infamy] is more than [10]> <hidden from users>",
+			],
+		},
+		{
+		"text":"Invite them to our city.",
+		"uniques":
+			[
+			"Comment [These refugees will pledge to your side as new citizens.]",
+			"[+1] population in a random city",
+			"Unavailable <when number of [Infamy] is more than [6]> <hidden from users>",
+			],
+		},
+		]
+	},
+	{
+	"name": "Exhausted refugees",
+	"text": "We've found a large group of stranded and starving refugees in the ruins. Their supplies has already been depleted for a while, and they are desperate to getting rid of their survival crisis.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"We can't afford feeding more people, unfortunately. We could only let fate decide their ending.",
+		"uniques":
+			[
+			"(Do nothing.)",
+			],
+		},
+		{
+		"text":"Weak flesh ripe for harvest. Take whatever left in here and dispose these refugees.",
+		"uniques":
+			[
+			"Warning: This will largely worsen your reputation.",
+			"Gain [40]-[80] [Gold]",
+			"Triggers a [Reputation largely worsened] event",
+			],
+		},
+		{
+		"text":"We could help them - BUT make sure they PAY for every ration of food.",
+		"uniques":
+			[
+			"Warning: This will negatively affect your reputation.",
+			"Gain [20]-[40] [Gold]",
+			"Triggers a [Reputation worsened] event",
+			"Unavailable <when number of [Infamy] is more than [10]> <hidden from users>",
+			],
+		},
+		{
+		"text":"We probably know a better place for them to settle without need to worry about starving again.",
+		"uniques":
+			[
+			"These refugees will pledge to your side as new Settlers.",
+			"Free [Settler] appears",
+			"Unavailable <when number of [Infamy] is more than [10]> <hidden from users>",
+			],
+		},
+		{
+		"text":"We can give them a new home in our city.",
+		"uniques":
+			[
+			"These refugees will pledge to your side as new citizens.",
+			"[+1] population in a random city",
+			"Unavailable <when number of [Infamy] is more than [10]> <hidden from users>",
+			],
+		},
+		]
+	},
+	{
+	"name": "Armed refugees",
+	"text": "We've discovered an refuge in the ruins, its occupants has been armed. They are willing to negotiate after we declared themselves peaceful.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Kindly ask these squatters to leave, peacefully of course.",
+		"uniques":
+			[
+			"(Do nothing.)",
+			],
+		},
+		{
+		"text":"Unfortunately, 'peace' was actually a lie - Plunder the refuge!",
+		"uniques":
+			[
+			"Warning: This will largely worsen your reputation.",
+			"[Target Unit] takes [30] damage",
+			"[Target Unit] gains [10] XP",
+			"Gain [30]-[100] [Gold]",
+			"Triggers a [Reputation largely worsened] event",
+			],
+		},
+		{
+		"text":"We would like some hired hands from their ranks.",
+		"uniques":
+			[
+			"These refugees will pledge to your side as soldiers.",
+			"Free [TempUnit] appears",
+			"Unavailable <when number of [Infamy] is more than [5]> <hidden from users>",
+			],
+		},
+		{
+		"text":"Collect information form these refugees.",
+		"uniques":
+			[
+			"Gain [5]-[20] [Science]",
+			"Unavailable <when number of [Infamy] is more than [4]> <hidden from users>",
+			],
+		},
+		{
+		"text":"Hire them as military instructors",
+		"uniques":
+			[
+			"They will temporarily provide military training service.",
+			"All newly-trained [Military] units [in all cities] receive the [Hardened Survivor] promotion <for [10] turns>",
+			"Unavailable <when number of [Infamy] is more than [4]> <hidden from users>",
+			],
+		},
+		]
+	},
+	{
+	"name": "Deserted refuge",
+	"text": "No matter who were the previous occupants or what had previously happened, this refuge is now deserted. Whatever remains here are now at our disposal.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Leave it as it is.",
+		"uniques":
+			[
+			"(Do nothing.)",
+			],
+		},
+		{
+		"text":"Search for anything valuable.",
+		"uniques":
+			[
+			"Gain [10]-[40] [Gold]"
+			],
+		},
+		{
+		"text":"Salvage its remains as materials.",
+		"uniques":
+			[
+			"[+2 Production] [in your cities] <for [5] turns> <when number of [Cities] is less than [4]>",
+			"[+1 Production] [in your cities] <for [5] turns> <when number of [Cities] is between [3] and [6]>",
+			],
+		},
+		{
+		"text":"Let our researchers have a look in the scene for any interesting find.",
+		"uniques":
+			[
+			"Gain [10]-[20] [Culture] <with [50]% chance>",
+			"Gain [5]-[15] [Science] <with [25]% chance>"
+			],
+		},
+		]
+	},
+	{
+	"name": "Mass grave",
+	"text": "A strong smell of rot has immediately caught attention of our searching team, and it turned out to be a mass grave in the ruins. Many of these corpses have not been properly buried.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Leave it as it is.",
+		"uniques":
+			[
+			"(Do nothing.)",
+			],
+		},
+		{
+		"text":"Let the fallen spirits receive the respect they deserve.",
+		"uniques":
+			[
+			"Gain [10] [Faith]"
+			],
+		},
+		{
+		"text":"Plunder the corpses and loot anything valuable out of them.",
+		"uniques":
+			[
+			"Warning: This action may lead to reputation consequences by chance.",
+			"Triggers a [Reputation worsened] event <with [15]% chance>",
+			"Gain [10]-[30] [Gold]",
+			],
+		},
+		{
+		"text":"Unearth some of their corpses for research.",
+		"uniques":
+			[
+			"Warning: This action may lead to reputation consequences by chance.",
+			"Triggers a [Reputation worsened] event <with [15]% chance>",
+			"Gain [5]-[20] [Science]"
+			],
+		},
+		]
+	},
+
+	// Infamy
+	{
+	"name": "Reputation worsened",
+	"text": "Your reputation has been worsened due to your recent actions.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Let it be, this can't be undone now.",
+		"uniques":
+			[
+			"City states and neutral factions will regard you worse.",
+			"Instantly provides [1] [Infamy]",
+			],
+		},
+		/*
+		{
+		"text":"Our spindoctors will handle that.",
+		"uniques":
+			[
+			"85% chance of causing no reputation losses.",
+			"Instantly provides [1] [Infamy] <with [15]% chance>",
+			],
+		},
+		{
+		"text":"Silence the scandals and leave no evidences for future accusations.",
+		"uniques":
+			[
+			"75% chance of causing no reputation losses.",
+			"Instantly provides [1] [Infamy] <with [25]% chance>",
+			],
+		},
+		*/
+		]
+	},
+	{
+	"name": "Reputation largely worsened",
+	"text": "Your reputation has been largely worsened due to your recent actions.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"We'll not shy from it, anyway.",
+		"uniques":
+			[
+			"City states and neutral factions will regard you far worse.",
+			"Instantly provides [2] [Infamy]",
+			],
+		},
+		/*
+		{
+		"text":"Our spindoctors will handle that.",
+		"uniques":
+			[
+			"Reputation loss is halved, with 65% chance of causing no reputation losses.",
+			"Instantly provides [1] [Infamy] <with [45]% chance>",
+			],
+		},
+		{
+		"text":"Silence the scandals and leave no evidences for future accusations.",
+		"uniques":
+			[
+			"75% chance of causing no reputation losses.",
+			"Instantly provides [2] [Infamy] <with [25]% chance>",
+			],
+		},
+		*/
+		]
+	},
+
+	// Scrappers
+	{
+	"name": "Scrappers",
+	"text": "When our searchers entered the ruins, the scrapper gangs have already occupied this place and declared all the scraps theirs, preventing us from recovering anything ourselves. If we want something from the ruins, we have to pay the price premium, but their highly experienced diggers will guarente to provide what we want.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Let's not bother with their business.",
+		"uniques":
+			[
+			"Comment [(Do nothing.)",
+			],
+		},
+		{
+		"text":"Screw these scavengers, drive them away out of whatever rightfully ours by force!",
+		"uniques":
+			[
+			"Warning: This will largely worsen your reputation.",
+			"[Target Unit] takes [20] damage",
+			"[Target Unit] gains [10] XP",
+			"Gain [40]-[80] [Gold]",
+			"Gain [10]-[20] [Culture] <with [35]% chance>",
+			"Gain [5]-[15] [Science] <with [35]% chance>"
+			"Triggers a [Reputation largely worsened] event",
+			],
+		},
+		{
+		"text":"We'll pay for the salvaged cultural artifacts they find.",
+		"uniques":
+			[
+			"Gain [-80] [Gold]",
+			"Gain [30]-[45] [Culture]",
+			],
+		},
+		{
+		"text":"We'll pay for the scientific gadgets they find.",
+		"uniques":
+			[
+			"Gain [-80] [Gold]",
+			"Gain [15]-[50] [Science]",
+			],
+		},
+		{
+		"text":"We'll buy down whatever interesting they find.",
+		"uniques":
+			[
+			"Gain [-150] [Gold]",
+			"Gain [30]-[45] [Culture]",
+			"Gain [15]-[50] [Science]",
+			],
+		},
+		]
+	},
+
+
+
+//Building Quests
+
+	{
+	"name": "Food Storage Perk",
+	"text": "With a proper storage for food, our surplus food can be stored longer. How should we make good use for our surpluses?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Dedicate our surpluses to improve local life conditions.",
+		"uniques":
+			[
+			"Adopt [Food Storage - Population]",
+			"Unavailable <after adopting [Food Storage - Colony Support]>",
+			],
+		},
+		{
+		"text":"The surpluses could be shared among our cities and colonies through transport routes.",
+		"uniques":
+			[
+			"Adopt [Food Storage - Colony Support]",
+			"Unavailable <after adopting [Food Storage - Population]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Hydroponic Farm Perk",
+	"text": "With the first hydroponic greenhouses running, it provided us a promising prospect of increasing the food autonomy of cities and colonies in even the most remote wastelands. Our engineers have proposed two different improvemented designs over the first greenhouses, one that put emphasis on intensive food production for efficiency, another one that streamline the design for easier extensive deployment. Which one should be the mainstay for our hydroponic farms?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Ramping up food production is more important.",
+		"uniques":
+			[
+			"Adopt [Hydroponic Farm - Intensive]",
+			"Unavailable <after adopting [Hydroponic Farm - Extensive]>",
+			],
+		},
+		{
+		"text":"Ease of construction for sooner availablility matters.",
+		"uniques":
+			[
+			"Adopt [Hydroponic Farm - Extensive]",
+			"Unavailable <after adopting [Hydroponic Farm - Intensive]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Synthetic Food Plant Perk",
+	"text": "With the revolutionary biomass synthesis technologies, we can now synthesize foodstuff that people never imagined in the old days, from other organics and even inorganic ingredients. Ideally we can dedicate our food plants in mass-producing nutrient-dense edibles to largely supplement our food sources, however, it's taste is not exactly welcomed by everyone. Alternatively, we can also allow the food plants to create more pleasing variety of synthetic food and additives for the population.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Dedicate the food plants to nutrient-dense food.",
+		"uniques":
+			[
+			"Adopt [Synthetic Food Plant - Nutrient-Dense Food]",
+			"Unavailable <after adopting [Synthetic Food Plant - Additives]>",
+			],
+		},
+		{
+		"text":"Allow the food plants to manufacture food additives.",
+		"uniques":
+			[
+			"Adopt [Synthetic Food Plant - Additives]",
+			"Unavailable <after adopting [Synthetic Food Plant - Nutrient-Dense Food]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Waterworks Perk",
+	"text": "We've restored water systems in our city for the first time, our people rejoyced with clean water flowing again. However, we now have an debate on what should be given priority of our water supplies.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Life quality matters. Population should be given priority for water consumption.",
+		"uniques":
+			[
+			"Adopt [Waterworks - Population]",
+			"Unavailable <after adopting [Waterworks - Agriculture]>",
+			],
+		},
+		{
+		"text":"Food security matters. Direct our surplus fresh water for farms in less fertile lands.",
+		"uniques":
+			[
+			"Adopt [Waterworks - Agriculture]",
+			"Unavailable <after adopting [Waterworks - Population]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Hospital Perk",
+	"text": "How we should utilize our healthcare resources is now under debate. Should our hospitals focus on the role of supporting population well-being, or put emphasis on providing medical support under harsh conditions?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Provide our people with the best care possible.",
+		"uniques":
+			[
+			"Adopt [Hospital - Care Wards]",
+			"Unavailable <after adopting [Hospital - Heavy Duty Wards]>",
+			],
+		},
+		{
+		"text":"We need to ensure the healthcare system can be relied upon in the worst situations.",
+		"uniques":
+			[
+			"Adopt [Hospital - Heavy Duty Wards]",
+			"Unavailable <after adopting [Hospital - Care Wards]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Biotech Lab Perk",
+	"text": "As our first dedicated biotech facility entered service, these labs will be a crucial part in providing scientific solution to the most complicated diseases. Aside from population benefits, there are some recommendations on in what ways our biomedical labs should also provide additional benefits. Either we can utilize its resource to assist our priortized research, or provide support and optimization for our agriwells crucial for food supplies in remote regions.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Our important research could use some help from these biotech labs.",
+		"uniques":
+			[
+			"Adopt [Biotech Lab - Research]",
+			"Unavailable <after adopting [Biotech Lab - Agriculture]>",
+			],
+		},
+		{
+		"text":"Let's benefit our food production as well.",
+		"uniques":
+			[
+			"Adopt [Biotech Lab - Agriculture]",
+			"Unavailable <after adopting [Biotech Lab - Research]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Incubation Vats Perk",
+	"text": "These devices allowed us to breed surrogate and even artificial babies - making birth rates no longer completely relient on population. However, our scientists and military have different ideas of taking the advanced technologies a bit further. Scientists proposed to dedicate it for creating and sustaining a stronger and healthier generation of population, while the military proposed to make it a cloning plant providing a steady supply of soldiers during wartime.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"We hope to see a thriving new generation of children.",
+		"uniques":
+			[
+			"Adopt [Incubation Vats - Growth]",
+			"Unavailable <after adopting [Incubation Vats - Cloning Vats]>",
+			],
+		},
+		{
+		"text":"Our military will benefit from it.",
+		"uniques":
+			[
+			"Adopt [Incubation Vats - Cloning Vats]",
+			"Unavailable <after adopting [Incubation Vats - Growth]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Workshop Perk",
+	"text": "The workshop will provide us the necessary productivity to support our growing colonies and towns before transitioning to more efficient manufacturing. However, our people argued over the means of production in the workshop. One side suggested that we should optimize the workshop towards producing new goods and materials with assured quality, while the other side argued that the worshop should help on reducing resource strain through providing refurbishing and repair for worn-out commodities and structures.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Our workshop should focus on production.",
+		"uniques":
+			[
+			"Adopt [Workshop - Productivity]",
+			"Unavailable <after adopting [Workshop - Refurbishment]>",
+			],
+		},
+		{
+		"text":"Our workshop can help with reducing our resource consumption.",
+		"uniques":
+			[
+			"Adopt [Workshop - Refurbishment]",
+			"Unavailable <after adopting [Workshop - Productivity]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Prefab Foundry Perk",
+	"text": "These prefab foundries will become great assets in making construction and assembly easier than ever. The next question would be, how should the majority of our prefabs be used?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"These prefabs could help us in easier rural infrastructure constructions.",
+		"uniques":
+			[
+			"Adopt [Prefab Foundry - Infrastructure]",
+			"Unavailable <after adopting [Prefab Foundry - Development]>",
+			],
+		},
+		{
+		"text":"These prefabs provide convenient means for supporting urban construction of newer cities.",
+		"uniques":
+			[
+			"Adopt [Prefab Foundry - Development]",
+			"Unavailable <after adopting [Prefab Foundry - Infrastructure]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Factory Perk",
+	"text": "With our very first factories operational, we now have a good surplus of goods more than enough to sustain the bottom-line needs for a city. In what ways we can not let its productivity go to waste?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Our factories can help us processing preserved food in larger batches.",
+		"uniques":
+			[
+			"Adopt [Factory - Cannery]",
+			"Unavailable <after adopting [Factory - Prototyping Plants]>",
+			],
+		},
+		{
+		"text":"Our factories can assist our scientists in developing experimental prototypes of newer technologies.",
+		"uniques":
+			[
+			"Adopt [Factory - Prototyping Plants]",
+			"Unavailable <after adopting [Factory - Cannery]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Semiautomatic Assembly Plant Perk",
+	"text": "With the introduction of industrial robotics, industrial capabilities of our factories has been significantly increased. Our engineers are now debating on how autonomous our robotic assembly plants should be - One idea suggests extensive automation in most parts of its production processes which could significantly save expediture on low echelon labours, while the opposing idea critisized that higher automation sacrifices efficiency for guarenteed automatic reliability and instead recommend maximizing productivity through human-robot cooperation.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Higher automation will be the future of our manufacturing.",
+		"uniques":
+			[
+			"Adopt [Semiautomatic Assembly Plant - Higher Automation]",
+			"Unavailable <after adopting [Semiautomatic Assembly Plant - Assisted Laboring]>",
+			],
+		},
+		{
+		"text":"We should ensure our assembly plants work to provide the best possible output.",
+		"uniques":
+			[
+			"Adopt [Semiautomatic Assembly Plant - Assisted Laboring]",
+			"Unavailable <after adopting [Semiautomatic Assembly Plant - Higher Automation]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Matter Fabricator Perk",
+	"text": "The power of Nimbus and matter science have enabled us to create almost any known substance from this machine, through myriads of expensive and complicated processes. Should our matter fabricators provide us an alternative source of strategic resources, or assist our scientists in providing materials for more creative experiments?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"The capability of creating strategic resources we need will be invaluable.",
+		"uniques":
+			[
+			"Adopt [Matter Fabricator - Strategic Resource]",
+			"Unavailable <after adopting [Matter Fabricator - Creative Research]>",
+			],
+		},
+		{
+		"text":"Let's make material supply no longer an obstacle of the most frontier research.",
+		"uniques":
+			[
+			"Adopt [Matter Fabricator - Creative Research]",
+			"Unavailable <after adopting [Matter Fabricator - Strategic Resource]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Marketplace Perk",
+	"text": "The new marketplace provided a place selling surplus produce of our city, as well have also attracted free outlanders from nearby areas for bartering. It is however recently a gang of outlanders exercised foul practices hoarding our goods and then sold them to others with price premium. Despite the gang have later been punished, our people demanded measures for protecting their interests. However, the outlanders entreated us for keeping our inner markets open as it could brought us mutual profits.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"We need to protect interest of our local citizens. Outsiders will trade under restricted conditions.",
+		"uniques":
+			[
+			"Adopt [Marketplace - Restricted Markets]",
+			"Unavailable <after adopting [Marketplace - Open Markets]>",
+			],
+		},
+		{
+		"text":"We'll keep our markets open to outlanders. The goods and wealth must flow.",
+		"uniques":
+			[
+			"Adopt [Marketplace - Open Markets]",
+			"Unavailable <after adopting [Marketplace - Restricted Markets]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Trade Warehouse Perk",
+	"text": "These warehouses and depots will increase the capacity of our trade routes considerably. To handle the increasing demands for long range logistics, our logistic workers proposed different ideas over the means of freighting operation. We've been provided two solutions: One of which the trade warehouse assigns attendents to logistic fleets, who will be responsible for assisting and protecting the shipment; another of which the trade warehouse packs goods in standardized, compact containers to maximize the cargo throughput.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Guarenteed safety of goods matters.",
+		"uniques":
+			[
+			"Adopt [Trade Warehouse - Attended Convoy]",
+			"Unavailable <after adopting [Trade Warehouse - Compact Convoy]>",
+			],
+		},
+		{
+		"text":"High throughput of goods matters.",
+		"uniques":
+			[
+			"Adopt [Trade Warehouse - Compact Convoy]",
+			"Unavailable <after adopting [Trade Warehouse - Attended Convoy]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Customs House Perk",
+	"text": "The customs house will regulate the goods flowing in and out of our center of trade, and levy duties from them. Should we levy duties on goods only at their destination, or levy whenever the goods cross the customs?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Levy at only destination.",
+		"uniques":
+			[
+			"Adopt [Customs House - Destination Duties]",
+			"Unavailable <after adopting [Customs House - Crossing Duties]>",
+			],
+		},
+		{
+		"text":"Levy whenever crossing.",
+		"uniques":
+			[
+			"Adopt [Customs House - Crossing Duties]",
+			"Unavailable <after adopting [Customs House - Destination Duties]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Financial Institute Perk",
+	"text": "The financial institute provides a powerful platform raising funds for industries, businesses and services. Now we need to define its primary principles for loan provision. Should our financial institute provide loans by profitability, or following the needs of the local development?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"A profitable business is a good business. Profitability should be a major concern.",
+		"uniques":
+			[
+			"Adopt [Financial Institute - Profitability]",
+			"Unavailable <after adopting [Financial Institute - Development]>",
+			],
+		},
+		{
+		"text":"It is important to ensure the development projects can be provided with favorable loans when needed.",
+		"uniques":
+			[
+			"Adopt [Financial Institute - Development]",
+			"Unavailable <after adopting [Financial Institute - Profitability]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Exchange Center Perk",
+	"text": "In wake of the rise of alternative currencies and value storage, we have established the first exchange center to ensure our ever complexed economy adapt to the everchanging trends of the era. As Ashstamps will remain to be the most stable and primary global currency, it would be better to define a standard for exchance rate between Ashstamps and alternative currencies. It's up to you to decide in which way the exchange rate are tied to Ashstamps - fixed or dynamic.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Fixed rates. Every alternative currency should submit a sum of credits to assure their values.",
+		"uniques":
+			[
+			"Adopt [Exchange Center - Fixed Rate]",
+			"Unavailable <after adopting [Exchange Center - Dynamic Rate]>",
+			],
+		},
+		{
+		"text":"Dynamic rates. They will tie with our current economic conditions.",
+		"uniques":
+			[
+			"Adopt [Exchange Center - Dynamic Rate]",
+			"Unavailable <after adopting [Exchange Center - Fixed Rate]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Public School Perk",
+	"text": "The opening of our first public school marked an important step towards restoration of the pre-cataclysm education. Besides the scientific knowledge essential for nurturing scholars and researchers, we should also equip people with skills that would be consider essential to sustaining the society and support development. Which you would consider to be more important to us?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Workshop skills for a stready supply of industrial workforce.",
+		"uniques":
+			[
+			"Adopt [Public School - Worker School]",
+			"Unavailable <after adopting [Public School - Clerk School]>",
+			"Unavailable <after adopting [Public School - Pioneer School]>",
+			"Unavailable <after adopting [Public School - Art School]>",
+			],
+		},
+		{
+		"text":"Record keeping skills to provide clerks for growing the economic sector.",
+		"uniques":
+			[
+			"Adopt [Public School - Clerk School]",
+			"Unavailable <after adopting [Public School - Worker School]>",
+			"Unavailable <after adopting [Public School - Pioneer School]>",
+			"Unavailable <after adopting [Public School - Art School]>",
+			],
+		},
+		{
+		"text":"Skills of survival will be essential to our endurance in harshest environment.",
+		"uniques":
+			[
+			"Adopt [Public School - Pioneer School]",
+			"Unavailable <after adopting [Public School - Worker School]>",
+			"Unavailable <after adopting [Public School - Clerk School]>",
+			"Unavailable <after adopting [Public School - Art School]>",
+			],
+		},
+		{
+		"text":"Skills of art for nurturing creative minds providing interesting prospects for our society.",
+		"uniques":
+			[
+			"Adopt [Public School - Art School]",
+			"Unavailable <after adopting [Public School - Worker School]>",
+			"Unavailable <after adopting [Public School - Clerk School]>",
+			"Unavailable <after adopting [Public School - Pioneer School]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Academy Perk",
+	"text": "The academy will be our higher insitutue for education and training of more professional specialists. The distribution of an academy's resource becomes the next concern of our people. Should our academies provide their resources for the best and the most talented, or spread out the resource for providing us generally more productive specialists?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Only the best people can bring our civilization the important breakthroughs.",
+		"uniques":
+			[
+			"Adopt [Academy - Elite Education]",
+			"Unavailable <after adopting [Academy - Universal Education]>",
+			],
+		},
+		{
+		"text":"More productive specialists will ensure resources of our cities can be used as efficient as possible.",
+		"uniques":
+			[
+			"Adopt [Academy - Universal Education]",
+			"Unavailable <after adopting [Academy - Elite Education]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Research Lab Perk",
+	"text": "Our scholars have different preferred approaches for carrying out their research. Some of our scholars preferred theory and laboratory focused research, while the other scholars advocated practical application and field task directed analytics. Which kind of methdology would you prefer to invest the research resources into?",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Theories and hypothesis pave way for advanced frontier research.",
+		"uniques":
+			[
+			"Adopt [Research Lab - Theoretical Research]",
+			"Unavailable <after adopting [Research Lab - Applied Research]>",
+			],
+		},
+		{
+		"text":"Practical application can provide us solid directions of research and development.",
+		"uniques":
+			[
+			"Adopt [Research Lab - Applied Research]",
+			"Unavailable <after adopting [Research Lab - Theoretical Research]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Supercomputer Center Perk",
+	"text": "Our engineers and researchers who have contributed in the construction of the new supercomputers are eager to show its advanced computation power - You'll decide which of following the proposals will make a good show to amaze our people.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"As an example, provide solution for one of our contemporary challenges with aid of the supercomputer.",
+		"uniques":
+			[
+			"Adopt [Supercomputer Center - Free Tech]",
+			"Unavailable <after adopting [Supercomputer Center - Computation Power]>",
+			],
+		},
+		{
+		"text":"Show what our supercomputers are capable of and are up for any future research challenges.",
+		"uniques":
+			[
+			"Adopt [Supercomputer Center - Computation Power]",
+			"Unavailable <after adopting [Supercomputer Center - Free Tech]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Quantum Cogitator Perk",
+	"text": "Making use of the sophisicated synthetic mind theories and quantum computation, our researchers created an state of the art artificial intelligence. Several weeks after its creation, in surprise of our researchers, they discovered that the Cogitator has overridden several systems of the Institute facility bypassing the preset protocols, but at the same time, it has optimized the operation of the entire research facility. The incident has once again risen the classic debate over the role and power given to higher level synthetic intelligences.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Advanced synthetic intelligences must be contained if they do not comply to rules. We'll only use purpose them for isolated research, under strict supervision of our scientists.",
+		"uniques":
+			[
+			"Adopt [Quantum Cogitator - Research Core]",
+			"Unavailable <after adopting [Quantum Cogitator - Optimization Core]>",
+			],
+		},
+		{
+		"text":"Synthetic intelligences, when tamed, still holds invaluable benefits and potentials that outweigh risks. We can use them to assist the operation of our cities, but of course under careful supervision.",
+		"uniques":
+			[
+			"Adopt [Quantum Cogitator - Optimization Core]",
+			"Unavailable <after adopting [Quantum Cogitator - Research Core]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Ether Matrix Perk",
+	"text": "Ever since Ether has been identified as substance, our scientists have always believed that Ether contained information, knowledge and mysteries beyond what our science has revealed and achieved. In this day, the scientists have finally completed an operational and stable version of Deep Ether Immersion Device, enabling our scientists to made contact with the information of the 'Deeper Ether Level'. As the experiment finished without any incidents, our scientist was ejected from the device, returned to the material reality a thousand-yard gaze. When we asked what he saw, he responded:",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"'A Future.'",
+		"uniques":
+			[
+			"Adopt [Ether Matrix - Future]",
+			"Unavailable <after adopting [Ether Matrix - Dream]>",
+			],
+		},
+		{
+		"text":"'A Dream.'",
+		"uniques":
+			[
+			"Adopt [Ether Matrix - Dream]",
+			"Unavailable <after adopting [Ether Matrix - Future]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Monument - Founding Virtues",
+	"text": "We have erected our very first monument, carrying our legacies of the past, achievements of the present, and hopes of the future. Our founding mounument will show our children what have made us, and the foundations of our civilization.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"'We must all remember who ourselves are... (Chooses 3 founding virtune policy trees)'",
+		"uniques":
+			[
+			"Triggers a [Founding Virtues - Past] event",
+			"Adopt [Monument - Founder]",
+			],
+		},
+		]
+	},
+	{
+	"name": "Founding Virtues - Past",
+	"text": "'What have made our past.'",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"'We survived by becoming the most capable.'",
+		"uniques":
+			[
+			"Adopt [Merit]",
+			"Triggers a [Founding Virtues - Present] event",
+			"Unavailable <after adopting [Cohesion]>",
+			],
+		},
+		{
+		"text":"'We survived by strength of unity.'",
+		"uniques":
+			[
+			"Adopt [Cohesion]",
+			"Triggers a [Founding Virtues - Present] event",
+			"Unavailable <after adopting [Merit]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Founding Virtues - Present",
+	"text": "'What we are in the present.'",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"'We are survivors.'",
+		"uniques":
+			[
+			"Adopt [Adaption]",
+			"Triggers a [Founding Virtues - Future] event",
+			"Unavailable <after adopting [Consolidation]>",
+			],
+		},
+		{
+		"text":"'We are builders.'",
+		"uniques":
+			[
+			"Adopt [Consolidation]",
+			"Triggers a [Founding Virtues - Future] event",
+			"Unavailable <after adopting [Adaption]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Founding Virtues - Future",
+	"text": "'What will be our future.'",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"'Longlivity is our future.'",
+		"uniques":
+			[
+			"Adopt [Foundation]",
+			"Unavailable <after adopting [Progress]>",
+			],
+		},
+		{
+		"text":"'Ambition is our future.'",
+		"uniques":
+			[
+			"Adopt [Progress]",
+			"Unavailable <after adopting [Foundation]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Archives Perk",
+	"text": "People are divided over the relics should be managed. Some emphasized that the relics are irreplaceable and culturally important, advocated reduced exposure of these sacred relics. Some see the relics as invaluable treasure that carried knowledge from the past, recommending that the relics should be displayed more often for educational purposes.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"They are too important and should be preserved at the best conditions.",
+		"uniques":
+			[
+			"Adopt [Archives - Preservation]",
+			"Unavailable <after adopting [Archives - Education]>",
+			],
+		},
+		{
+		"text":"We should let more people learn from these relics.",
+		"uniques":
+			[
+			"Adopt [Archives - Education]",
+			"Unavailable <after adopting [Archives - Preservation]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Concert Hall Perk",
+	"text": "Two large groups of artists argued over the best use of our new Concert Hall. One group argued that only elegant stage plays are worthy of such stage, while the another criticized that shows with entertaining elements are much more welcomed by audiences and claimed themselves superior. Your decision here will define the norms for future shows held in our concert halls.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"People will prefer thrilling shows.",
+		"uniques":
+			[
+			"Adopt [Concert Hall - Entertainment]",
+			"Unavailable <after adopting [Concert Hall - Culture]>",
+			],
+		},
+		{
+		"text":"The stage is not for circus.",
+		"uniques":
+			[
+			"Adopt [Concert Hall - Culture]",
+			"Unavailable <after adopting [Concert Hall - Entertainment]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Creative Media Studio Perk",
+	"text": "",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"People will prefer thrilling shows.",
+		"uniques":
+			[
+			"Adopt [Creative Media Studio - Policy]",
+			"Unavailable <after adopting [Concert Hall - Culture]>",
+			],
+		},
+		{
+		"text":"The stage is not for circus.",
+		"uniques":
+			[
+			"Adopt [Creative Media Studio - Culture]",
+			"Unavailable <after adopting [Concert Hall - Entertainment]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Broadcast Station Perk",
+	"text": "Our broadcast station is ready for its initial airing. You'll have the pleasure of hosting the first broadcast.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"(Broadcast a promotion for attracting new immigrants from nearby regions.)",
+		"uniques":
+			[
+			"Adopt [Broadcast Station - Immigrants]",
+			"Unavailable <after adopting [Broadcast Station - Morale]>",
+			],
+		},
+		{
+		"text":"(Broadcast a speech for rising morale of your people.)",
+		"uniques":
+			[
+			"Adopt [Broadcast Station - Morale]",
+			"Unavailable <after adopting [Broadcast Station - Immigrants]>",
+			],
+		},
+		],
+	},
+	{
+	"name": "Network Center Perk",
+	"text": "As information networks have become increasingly available to the public, just like when 'internet' had been prevalent in the pre-Cataclysm history - It has brought massive impact to our society. It has given rise to a group of ​ingenious information specialists, as well emergence of several new social trends.",
+	"presentation": "Alert",
+	"choices":
+		[
+		{
+		"text":"Give these new trends a good kickstarting.",
+		"uniques":
+			[
+			"Adopt [Network Center - Culture Boom]",
+			"Unavailable <after adopting [Network Center - Espionage]>",
+			],
+		},
+		{
+		"text":"'Sensitive to information' would make good intelligence officers.",
+		"uniques":
+			[
+			"Adopt [Network Center - Espionage]",
+			"Unavailable <after adopting [Network Center - Culture Boom]>",
+			],
+		},
+		],
+	},
+]

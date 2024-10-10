@@ -1,0 +1,802 @@
+[
+	//founding virtunes
+
+	{
+        "name": "Merit",
+        "era": "Aftermath era",
+        "uniques": [
+        	],
+        "policies": [
+
+		{
+                "name": "merit1",
+                "uniques": [
+			
+                	],
+                "row": 1,
+                "column": 1,
+		},
+
+		{
+                "name": "Merit Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Cohesion",
+        "era": "Aftermath era",
+        "uniques": [
+        	],
+        "policies": [
+
+		{
+                "name": "cohe1",
+                "uniques": [
+			
+                	],
+                "row": 1,
+                "column": 1,
+		},
+
+		{
+                "name": "Cohesion Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Adaption",
+        "era": "Aftermath era",
+        "uniques": [
+        	],
+        "policies": [
+
+		{
+                "name": "Adap1",
+                "uniques": [
+			
+                	],
+                "row": 1,
+                "column": 1,
+		},
+
+		{
+                "name": "Adaption Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Consolidation",
+        "era": "Aftermath era",
+        "uniques": [
+        	],
+        "policies": [
+
+		{
+                "name": "cons1",
+                "uniques": [
+			
+                	],
+                "row": 1,
+                "column": 1,
+		},
+
+		{
+                "name": "Consolidation Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Foundation",
+        "era": "Aftermath era",
+        "uniques": [
+        	],
+        "policies": [
+
+		{
+                "name": "fond1",
+                "uniques": [
+			
+                	],
+                "row": 1,
+                "column": 1,
+		},
+
+		{
+                "name": "Foundation Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Progress",
+        "era": "Aftermath era",
+        "uniques": [
+        	],
+        "policies": [
+
+		{
+                "name": "prgs1",
+                "uniques": [
+			
+                	],
+                "row": 1,
+                "column": 1,
+		},
+
+		{
+                "name": "Progress Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	//ideologies T1
+
+	//ideologies T2
+
+	//ideologies T3
+
+	//building quest decision tracker
+    {
+        "name": "Building Perk Choices - Growth",
+        "era": "Aftermath era",
+        "uniques": [
+		"Unavailable",
+        	],
+        "policies": [
+
+		{
+                "name": "Food Storage - Population",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Food Storage] provides 2 [Housing]]",
+                	],
+                "row": 1,
+                "column": 1,
+		},
+		{
+                "name": "Food Storage - Colony Support",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+2 Food] <in cities connected to the capital>",
+                	],
+                "row": 1,
+                "column": 3,
+		},
+
+		{
+                "name": "Hydroponic Farm - Intensive",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Hydroponic Farm] gain bonus [Food] yield from sufficient [Power] supply]",
+                	],
+                "row": 1,
+                "column": 5,
+		},
+		{
+                "name": "Hydroponic Farm - Extensive",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+20]% Production when constructing [Hydroponic Farm] buildings [in all cities]",
+                	],
+                "row": 1,
+                "column": 7,
+		},
+
+		{
+                "name": "Synthetic Food Plant - Nutrient-Dense Food",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Synthetic Food Plant] gain bonus [Food] yield from sufficient [Power] supply]",
+                	],
+                "row": 1,
+                "column": 9,
+		},
+
+		{
+                "name": "Synthetic Food Plant - Additives",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Synthetic Food Plant] gain bonus [Happiness] and [Gold] yield from sufficient [Power] supply]",
+                	],
+                "row": 1,
+                "column": 11,
+		},
+
+		{
+                "name": "Waterworks - Population",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Waterworks] provides [+1 Happiness] and 2 additional [Housing]]",
+                	],
+                "row": 2,
+                "column": 3,
+		},
+		{
+                "name": "Waterworks - Agriculture",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Waterworks] also boosts [Farmland] in non-fresh water tiles]",
+                	],
+                "row": 2,
+                "column": 5,
+		},
+
+		{
+                "name": "Hospital - Care Wards",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Hospital] provides [+2 Happiness]]",
+                	],
+                "row": 2,
+                "column": 7,
+		},
+		{
+                "name": "Hospital - Heavy Duty Wards",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+10] HP when healing <in [Friendly Land] tiles>",
+                	],
+                "row": 2,
+                "column": 9,
+		},
+
+		{
+                "name": "Biotech Lab - Research",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Biotech Lab] also provides [Science] yields]",
+                	],
+                "row": 3,
+                "column": 3,
+		},
+		{
+                "name": "Biotech Lab - Agriculture",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Biotech Lab] adds [+1 Food] to [Agriwell] tiles]",
+                	],
+                "row": 3,
+                "column": 5,
+		},
+
+		{
+                "name": "Incubation Vats - Growth",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Incubation Vats] provides solely population growth related perks]",
+                	],
+                "row": 3,
+                "column": 7,
+		},
+		{
+                "name": "Incubation Vats - Cloning Vats",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Incubation Vats] provides boosted growth during peace, provides boosted infantry production during wartime]",
+                	],
+                "row": 3,
+                "column": 9,
+		},
+
+		{
+                "name": "Building Perk Choices - Growth Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+        ]
+    },
+
+    {
+        "name": "Building Perk Choices - Productivity",
+        "era": "Aftermath era",
+        "uniques": [
+		"Unavailable",
+        	],
+        "policies": [
+
+		{
+                "name": "Workshop - Productivity",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Workshop] provides +[10]% [Production] boost locally]",
+                	],
+                "row": 1,
+                "column": 3,
+		},
+		{
+                "name": "Workshop - Refurbishment",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Workshop] reduces local [Gold] maintenence costs by [10]%]",
+                	],
+                "row": 1,
+                "column": 5,
+		},
+
+		{
+                "name": "Prefab Foundry - Infrastructure",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[-10]% construction time for [All] improvements <if [Prefab Foundry] is constructed in at least [1] of [Your] cities>",
+                	],
+                "row": 1,
+                "column": 7,
+		},
+		{
+                "name": "Prefab Foundry - Development",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+5]% Production when constructing [All] buildings [in all cities] <if [Prefab Foundry] is constructed in at least [1] of [Your] cities>",
+                	],
+                "row": 1,
+                "column": 9,
+		},
+
+		{
+                "name": "Factory - Cannery",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Factory] provides [+3 Food]]",
+                	],
+                "row": 2,
+                "column": 1,
+		},
+		{
+                "name": "Factory - Prototyping Plants",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Factory] provides [+2 Science]]",
+                	],
+                "row": 2,
+                "column": 3,
+		},
+
+		{
+                "name": "Semiautomatic Assembly Plant - Higher Automation",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Semiautomatic Assembly Plant] costs no [Gold] maintenance]",
+                	],
+                "row": 2,
+                "column": 5,
+		},
+		{
+                "name": "Semiautomatic Assembly Plant - Assisted Laboring",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Semiautomatic Assembly Plant] provides [+2 Production] to Industrial district tiles]",
+                	],
+                "row": 2,
+                "column": 7,
+		},
+
+		{
+                "name": "Matter Fabricator - Strategic Resource",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Matter Fabricator] provides one copy of [Titanium], [Petroleum], [Uranium] and [Halcyonite]]",
+                	],
+                "row": 2,
+                "column": 9,
+		},
+		{
+                "name": "Matter Fabricator - Creative Research",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+20]% [Science] <in cities with a [Research Lab]> <if [Matter Fabricator] is constructed in at least [1] of [Your] cities>",
+                	],
+                "row": 2,
+                "column": 11,
+		},
+
+		{
+                "name": "Building Perk Choices - Productivity Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Building Perk Choices - Economy",
+        "era": "Aftermath era",
+        "uniques": [
+		"Unavailable",
+        	],
+        "policies": [
+
+		{
+                "name": "Marketplace - Restricted Markets",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Market] provides [+1 Production]]",
+                	],
+                "row": 1,
+                "column": 3,
+		},
+		{
+                "name": "Marketplace - Open Markets",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Market] provides [+1 Gold]]",
+                	],
+                "row": 1,
+                "column": 5,
+		},
+
+		{
+                "name": "Trade Warehouse - Attended Convoy",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Trade Warehouse] provides [+2 Gold] in cities connected to capital]",
+                	],
+                "row": 1,
+                "column": 7,
+		},
+		{
+                "name": "Trade Warehouse - Compact Convoy",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Trade Warehouse] provides [+2 Production] in cities connected to capital]",
+                	],
+                "row": 1,
+                "column": 9,
+		},
+
+		{
+                "name": "Customs House - Destination Duties",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Financial Institute] provides [+3 Gold] in cities connected to capital]",
+                	],
+                "row": 2,
+                "column": 1,
+		},
+		{
+                "name": "Customs House - Crossing Duties",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+1 Gold] from each Trade Route <if [Customs House] is constructed in at least [1] of [Your] cities>",
+			"[+1 Gold] from each Trade Route <during a Golden Age> <if [Customs House] is constructed in at least [1] of [Your] cities>",
+                	],
+                "row": 2,
+                "column": 3,
+		},
+
+		{
+                "name": "Financial Institute - Profitability",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Financial Institute] provides [+15%] [Gold] bonus locally]",
+                	],
+                "row": 2,
+                "column": 5,
+		},
+		{
+                "name": "Financial Institute - Development",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[Gold] cost of purchasing items in cities [-10]% <in cities with a [Financial Institute]>",
+                	],
+                "row": 2,
+                "column": 7,
+		},
+
+		{
+                "name": "Exchange Center - Fixed Rate",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Gain [1000] [Gold]",
+                	],
+                "row": 2,
+                "column": 9,
+		},
+		{
+                "name": "Exchange Center - Dynamic Rate",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Exchange Center] provides varied percentage [Gold] bonuses based on your current treasury instead of fixed +30% percentage]",
+                	],
+                "row": 2,
+                "column": 11,
+		},
+
+		{
+                "name": "Building Perk Choices - Economy Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Building Perk Choices - Research",
+        "era": "Aftermath era",
+        "uniques": [
+		"Unavailable",
+        	],
+        "policies": [
+
+		{
+                "name": "Public School - Worker School",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Public School] provides [+2 Production]]",
+                	],
+                "row": 1,
+                "column": 1,
+		},
+		{
+                "name": "Public School - Clerk School",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Public School] provides [+2 Gold]]",
+                	],
+                "row": 1,
+                "column": 3,
+		},
+		{
+                "name": "Public School - Pioneer School",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Public School] provides [+2 Food]]",
+			"[+20]% Production when constructing [Worker] units [in all cities]",
+                	],
+                "row": 1,
+                "column": 5,
+		},
+		{
+                "name": "Public School - Art School",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Public School] provides [+1 Culture]]",
+                	],
+                "row": 1,
+                "column": 7,
+		},
+
+		{
+                "name": "Academy - Elite Education",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Academy] boosts local great people point generation]",
+                	],
+                "row": 1,
+                "column": 9,
+		},
+		{
+                "name": "Academy - Universal Education",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Academy] improves yield of all specialists in the city]",
+                	],
+                "row": 1,
+                "column": 11,
+		},
+
+		{
+                "name": "Research Lab - Theoretical Research",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+2 Science] [in capital] <for [5] turns> <upon discovering [Aftermath era] technology>",
+			"[+3 Science] [in capital] <for [8] turns> <upon discovering [Recovery era] technology>",
+			"[+5 Science] [in capital] <for [10] turns> <upon discovering [Outreach era] technology>",
+			"[+9 Science] [in capital] <for [10] turns> <upon discovering [Neomodern era] technology>",
+			"[+18 Science] [in capital] <for [10] turns> <upon discovering [Tempest era] technology>",
+			"[+27 Science] [in capital] <for [10] turns> <upon discovering [Ether era] technology>",
+			"[+42 Science] [in capital] <for [10] turns> <upon discovering [New Vision era] technology>",
+                	],
+                "row": 2,
+                "column": 1,
+		},
+		{
+                "name": "Research Lab - Applied Research",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Gain [2] [Science] <upon constructing [Aftermath era] [in your cities]>",
+			"Gain [4] [Science] <upon constructing [Recovery era] [in your cities]>",
+			"Gain [7] [Science] <upon constructing [Outreach era] [in your cities]>",
+			"Gain [12] [Science] <upon constructing [Neomodern era] [in your cities]>",
+			"Gain [20] [Science] <upon constructing [Tempest era] [in your cities]>",
+			"Gain [35] [Science] <upon constructing [Ether era] [in your cities]>",
+			"Gain [80] [Science] <upon constructing [New Vision era] [in your cities]>",
+                	],
+                "row": 2,
+                "column": 3,
+		},
+
+		{
+                "name": "Supercomputer Center - Free Tech",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[1] free random researchable Tech(s) from the [Neomodern era]",
+                	],
+                "row": 2,
+                "column": 5,
+		},
+		{
+                "name": "Supercomputer Center - Computation Power",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Supercomputer Center] provides additional [+5]% [Science] boost locally]",
+                	],
+                "row": 2,
+                "column": 7,
+		},
+
+		{
+                "name": "Quantum Cogitator - Research Core",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Quantum Cogitator] provides additional [+25]% [Science] boost locally when there is sufficient [Power]]",
+                	],
+                "row": 2,
+                "column": 9,
+		},
+		{
+                "name": "Quantum Cogitator - Optimization Core",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Quantum Cogitator] provides additional [+5]% boost to [Science], [+10]% boost to [Production], [Food] and [Gold] yields locally when there is sufficient [Power]]",
+                	],
+                "row": 3,
+                "column": 9,
+		},
+
+		{
+                "name": "Ether Matrix - Future",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Free Technology",
+                	],
+                "row": 2,
+                "column": 11,
+		},
+		{
+                "name": "Ether Matrix - Dream",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Free Social Policy",
+                	],
+                "row": 3,
+                "column": 11,
+		},
+
+		{
+                "name": "Building Perk Choices - Research Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+
+	{
+        "name": "Building Perk Choices - Culture",
+        "era": "Aftermath era",
+        "uniques": [
+		"Unavailable",
+        	],
+        "policies": [
+
+		{
+                "name": "Monument - Founder",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [If this is adopted, this means that you have already triggered your 3 founder virtues event.]",
+                	],
+                "row": 1,
+                "column": 4,
+		},
+
+		{
+                "name": "Archives - Preservation",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Archives] provides [+1 Culture]]",
+                	],
+                "row": 1,
+                "column": 7,
+		},
+		{
+                "name": "Archives - Education",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Archives] provides [+1 Science]]",
+                	],
+                "row": 1,
+                "column": 9,
+		},
+
+
+		{
+                "name": "Broadcast Station - Immigrants",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"[+2] population in a random city",
+                	],
+                "row": 2,
+                "column": 2,
+		},
+		{
+                "name": "Broadcast Station - Morale",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Empire enters a [4]-turn Golden Age",
+                	],
+                "row": 2,
+                "column": 4,
+		},
+
+		{
+                "name": "Network Center - Culture Boom",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Gain [150] [Culture]",
+                	],
+                "row": 2,
+                "column": 8,
+		},
+		{
+                "name": "Network Center - Espionage",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Gain an extra spy",
+                	],
+                "row": 2,
+                "column": 10,
+		},
+
+		{
+                "name": "Concert Hall - Entertainment",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Concert Hall] provides [+1 Happiness] to [Cultural districts]]",
+                	],
+                "row": 3,
+                "column": 1,
+		},
+		{
+                "name": "Concert Hall - Culture",
+                "uniques": [
+			"Comment [Adopted through building event]",
+			"Comment [[Concert Hall] provides [+1 Culture] to [Cultural districts]]",
+                	],
+                "row": 3,
+                "column": 3,
+		},
+
+		{
+                "name": "Building Perk Choices - Culture Complete",
+                "uniques": [
+                    "Unavailable",
+                	]
+		}
+		]
+	},
+]
